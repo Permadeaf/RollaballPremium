@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="WallCollision" ID="{67BF1FD5-C210-4B28-8C3E-3C5B214F69B5}">
+					<ChildrenList>
+						<Action Name="" ID="{1DEC392B-DB83-43C6-89E1-1106F6C13F00}" ShortID="196331365">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Collision" ID="{D8E91411-9A8E-44F6-BB70-4F363E994154}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PickupSound" ID="{A6A9F66A-FE6F-4C70-89D2-78FE9292EFA7}">
+					<ChildrenList>
+						<Action Name="" ID="{291BB505-FC9C-4EF3-8A6F-D916B2E4F1F5}" ShortID="706625733">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PickupSound" ID="{3E04AEB4-F456-42F1-A946-3CF4BF44880A}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ball_Play" ID="{C59B8643-A27C-4301-BC9D-B9432A061DBE}">
+					<ChildrenList>
+						<Action Name="" ID="{71FB1486-4883-47B8-9CF2-EB0932324539}" ShortID="579867230">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ball Roll" ID="{7FE09C8F-180C-4D4B-9D36-A216B5B22A80}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

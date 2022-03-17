@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{157CBA60-C77D-423C-8413-B13E62D08FCA}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{157CBA60-C77D-423C-8413-B13E62D08FCA}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Default" ID="{E4FE77FB-8196-4CB4-B7E7-340EF9B4C4C2}" ShortID="999694094">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Collision" ID="{D8E91411-9A8E-44F6-BB70-4F363E994154}" ShortID="1045450427">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{CF56055A-253B-43AE-954E-2876B0622610}" ShortID="92243309">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{8CE4D1CF-12BD-4B8A-94E1-AF7A1D0CC0DC}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{837705D2-9440-4C8E-BCEF-58EC295150F0}" ShortID="510384713">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{06F268A0-BF9F-41AE-9263-B51DDDD63F2B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>123</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{9745AFEA-6DD4-4D57-A305-F4243D4F0AE0}" ShortID="291492440">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0CE65728-D964-4D18-8B37-250FD345FF2A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.001</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>5.01381</XPos>
+														<YPos>-3.94522</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Footsteps(2)" ID="{9AC10B9C-5593-4FD1-BC62-E92A2DA035AE}">
+									<Language>SFX</Language>
+									<AudioFile>Footsteps(2).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="690755157"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Hit Wall Wood" ID="{A90EEC6E-08E8-4461-A22A-C062A9067325}">
+									<Language>SFX</Language>
+									<AudioFile>Hit Wall Wood.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="135709545"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Hit Wall Wood" ID="{A90EEC6E-08E8-4461-A22A-C062A9067325}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PickupSound" ID="{3E04AEB4-F456-42F1-A946-3CF4BF44880A}" ShortID="1026313859">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>27</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{B9D9B137-00D2-42ED-848D-52E9E4A4A83C}" ShortID="469704145">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{3F430941-A3C7-44C6-8BF7-358E90690DEE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Door maybe" ID="{D648A468-F110-4586-A10D-1811A9F838F4}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0960982658959538"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.315751445086713"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.308887283236994"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.755057803468216"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Door maybe.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="979774808"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Door maybe" ID="{D648A468-F110-4586-A10D-1811A9F838F4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Ball Roll" ID="{7FE09C8F-180C-4D4B-9D36-A216B5B22A80}" ShortID="139849333">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}" WorkUnitID="{CDA50ED3-C539-43BE-8C81-9FF4DB396942}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Floor_Material" ID="{CBD79FF2-6B5A-4A09-BE1A-1CC721A31F7E}" WorkUnitID="{CDA50ED3-C539-43BE-8C81-9FF4DB396942}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ball Roll Laminate" ID="{52B97F35-ED84-47DB-AAD8-3C768607BB7E}" ShortID="651794971">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{5D917104-967C-4220-A17F-82D01FA8F7A6}" ShortID="728532414">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9590DFFF-92E8-4E77-9576-5457940DD231}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>InvertedSCurve</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>15</XPos>
+																<YPos>816</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{2AE989D5-6A4B-477D-B14C-BEFD153384FF}" ShortID="590937042">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{182DE3F0-F01A-4982-9527-A50B401F4AD6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>5.00544</XPos>
+																<YPos>-5.79456</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>15</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom>
+												<Attenuation Name="Attenuation (Custom)" ID="{5D6C5D96-AAD2-4CCA-B57D-250E90F090B7}" ShortID="473256280">
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{FF18321E-30DF-4D46-ACB7-30C1E8646FB5}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>100</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RollSound" ID="{20883553-B859-42C2-8049-EBB91F40ABDD}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.841"/>
+												<Property Name="LoopEnd" Type="Real64" Value="15.495"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.184971098265896"/>
+												<Property Name="TrimEnd" Type="Real64" Value="15.6994219653179"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RollSound.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="717800367"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{21DD2B28-2442-4418-BCD7-1D7C5094805D}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="0.337837837837838"/>
+												<Property Name="PanY" Type="Real64" Value="100"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="RollSound" ID="{20883553-B859-42C2-8049-EBB91F40ABDD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Ball Roll Laminate" ID="{52B97F35-ED84-47DB-AAD8-3C768607BB7E}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
+										<ItemList>
+											<ItemRef Name="Ball Roll Laminate" ID="{52B97F35-ED84-47DB-AAD8-3C768607BB7E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

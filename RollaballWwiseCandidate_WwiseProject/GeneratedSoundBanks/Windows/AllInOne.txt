@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1835233263	WallCollision			\Default Work Unit\WallCollision	
+	3784267794	PickupSound			\Default Work Unit\PickupSound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	690755157	Collision	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Footsteps(2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Default\Collision		41644
+	979774808	PickupSound	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Door maybe_272DDA1A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Default\PickupSound		78768
+

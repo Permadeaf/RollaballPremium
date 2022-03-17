@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2858921253" Language="SFX" Hash="733793554">
+			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
+			<ShortName>AllInOne</ShortName>
+			<Path>AllInOne.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3784267794" Name="PickupSound" ObjectPath="\Events\Default Work Unit\PickupSound" DurationType="OneShot" DurationMin="0.446171" DurationMax="0.446171">
+					<IncludedMemoryFiles>
+						<File Id="979774808" Language="SFX">
+							<ShortName>Door maybe.wav</ShortName>
+							<Path>SFX\Door maybe_272DDA1A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1835233263" Name="WallCollision" ObjectPath="\Events\Default Work Unit\WallCollision" DurationType="OneShot" DurationMin="0.235714" DurationMax="0.235714">
+					<IncludedMemoryFiles>
+						<File Id="690755157" Language="SFX">
+							<ShortName>Footsteps(2).wav</ShortName>
+							<Path>SFX\Footsteps(2)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

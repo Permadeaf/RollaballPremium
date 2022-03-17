@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CDA50ED3-C539-43BE-8C81-9FF4DB396942}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{CDA50ED3-C539-43BE-8C81-9FF4DB396942}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Floor_Material" ID="{CBD79FF2-6B5A-4A09-BE1A-1CC721A31F7E}">
+					<ChildrenList>
+						<Switch Name="Concrete" ID="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}"/>
+						<Switch Name="Wood" ID="{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}"/>
+						<Switch Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
+						<Switch Name="Felt" ID="{604CB480-61AE-4D38-858D-882541BE9A55}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0b13921f8766b42aca6842fc7360d1, type: 3}
+  m_Name: C4970D97-501F-44D9-B420-D1BCB2ECD8FD
+  m_EditorClassIdentifier: 
+  objectName: Laminate
+  id: 2129253700
+  guid: C4970D97-501F-44D9-B420-D1BCB2ECD8FD
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 7e522774df16ba241abd46e6e431dde7, type: 2}

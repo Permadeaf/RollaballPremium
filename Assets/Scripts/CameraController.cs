@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //TODO: Lazy follow of player
         offset = transform.position - player.transform.position;
     }
 

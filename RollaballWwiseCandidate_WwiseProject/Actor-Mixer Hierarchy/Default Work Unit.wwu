@@ -209,7 +209,71 @@
 						</Sound>
 						<SwitchContainer Name="Ball Roll" ID="{7FE09C8F-180C-4D4B-9D36-A216B5B22A80}" ShortID="139849333">
 							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{AE4EA781-5759-4B4D-91DB-8883F69EBE52}" ShortID="510670741">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{93DC5BC8-A774-4E4E-8F82-F5498A1E83C0}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>InvertedSCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>816</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{2B1DEEAA-8166-4E57-A9AE-DA71D13E7319}" ShortID="121847364">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0C4B2C08-AFEB-4D08-BF70-25AD265869C9}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>5.00544</XPos>
+														<YPos>-5.79455999999999</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -232,73 +296,6 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<RTPCList>
-												<RTPC Name="" ID="{5D917104-967C-4220-A17F-82D01FA8F7A6}" ShortID="728532414">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{9590DFFF-92E8-4E77-9576-5457940DD231}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>InvertedSCurve</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>15</XPos>
-																<YPos>816</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>12</Value>
-											</ValueList>
-											<RTPCList>
-												<RTPC Name="" ID="{2AE989D5-6A4B-477D-B14C-BEFD153384FF}" ShortID="590937042">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{182DE3F0-F01A-4982-9527-A50B401F4AD6}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>5.00544</XPos>
-																<YPos>-5.79456</YPos>
-																<Flags>0</Flags>
-																<SegmentShape>Log3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>15</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -386,9 +383,10 @@
 								</Sound>
 								<Sound Name="Ball Roll Glass" ID="{4313BC48-2ED4-4E8A-87A1-C3F327035D4D}" ShortID="259567430">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

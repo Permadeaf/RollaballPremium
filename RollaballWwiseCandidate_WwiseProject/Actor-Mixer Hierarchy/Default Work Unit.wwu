@@ -208,6 +208,9 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="Ball Roll" ID="{7FE09C8F-180C-4D4B-9D36-A216B5B22A80}" ShortID="139849333">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
@@ -259,6 +262,9 @@
 											</RTPCList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{2AE989D5-6A4B-477D-B14C-BEFD153384FF}" ShortID="590937042">
 													<ReferenceList>
@@ -378,6 +384,36 @@
 										<ActiveSource Name="RollSound" ID="{20883553-B859-42C2-8049-EBB91F40ABDD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Ball Roll Glass" ID="{4313BC48-2ED4-4E8A-87A1-C3F327035D4D}" ShortID="259567430">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ball Roll Wood Glass" ID="{3435F1BA-5B18-4923-A203-6926BC5F886B}">
+											<Language>SFX</Language>
+											<AudioFile>Ball Roll Wood Glass.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="97892574"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Ball Roll Wood Glass" ID="{3435F1BA-5B18-4923-A203-6926BC5F886B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
 							<GroupingInfo>
@@ -385,12 +421,21 @@
 									<GroupingBehavior>
 										<ItemRef Name="Ball Roll Laminate" ID="{52B97F35-ED84-47DB-AAD8-3C768607BB7E}"/>
 									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Ball Roll Glass" ID="{4313BC48-2ED4-4E8A-87A1-C3F327035D4D}"/>
+									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
 										<ItemList>
 											<ItemRef Name="Ball Roll Laminate" ID="{52B97F35-ED84-47DB-AAD8-3C768607BB7E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
+										<ItemList>
+											<ItemRef Name="Ball Roll Glass" ID="{4313BC48-2ED4-4E8A-87A1-C3F327035D4D}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

@@ -12,7 +12,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Concrete" ID="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}"/>
+						<CurrentSwitchRef Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\RollaballWwiseCandidate_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\RollaballWwiseCandidate_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\RollaballWwiseCandidate_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\RollaballWwiseCandidate_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1888893067">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2858921253" Language="SFX" Hash="2121298058">
+			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
+			<ShortName>AllInOne</ShortName>
+			<Path>AllInOne.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1812213047" Name="Ball_Play" ObjectPath="\Events\Default Work Unit\Ball_Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="97892574" Language="SFX">
+							<ShortName>Ball Roll Wood Glass.wav</ShortName>
+							<Path>SFX\Ball Roll Wood Glass_10C4C929.wem</Path>
+						</File>
+						<File Id="717800367" Language="SFX">
+							<ShortName>RollSound.wav</ShortName>
+							<Path>SFX\RollSound_64491B21.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}">
+							<Media>
+								<File Id="717800367"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}">
+							<Media>
+								<File Id="97892574"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3784267794" Name="PickupSound" ObjectPath="\Events\Default Work Unit\PickupSound" DurationType="OneShot" DurationMin="0.446171" DurationMax="0.446171">
+					<IncludedMemoryFiles>
+						<File Id="979774808" Language="SFX">
+							<ShortName>Door maybe.wav</ShortName>
+							<Path>SFX\Door maybe_0E4EC9A5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1835233263" Name="WallCollision" ObjectPath="\Events\Default Work Unit\WallCollision" DurationType="OneShot" DurationMin="0.106485" DurationMax="0.106485">
+					<IncludedMemoryFiles>
+						<File Id="135709545" Language="SFX">
+							<ShortName>Hit Wall Wood.wav</ShortName>
+							<Path>SFX\Hit Wall Wood_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1062779386" Name="Player_Speed" ObjectPath="\Game Parameters\Default Work Unit\Player_Speed"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3964766495" Name="Floor_Material" ObjectPath="\Switches\Default Work Unit\Floor_Material" GUID="{CBD79FF2-6B5A-4A09-BE1A-1CC721A31F7E}">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\Default Work Unit\Floor_Material\Concrete" GUID="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Floor_Material\Wood" GUID="{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}"/>
+						<Switch Id="2129253700" Name="Laminate" ObjectPath="\Switches\Default Work Unit\Floor_Material\Laminate" GUID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
+						<Switch Id="3049959702" Name="Felt" ObjectPath="\Switches\Default Work Unit\Floor_Material\Felt" GUID="{604CB480-61AE-4D38-858D-882541BE9A55}"/>
+						<Switch Id="2449969375" Name="Glass" ObjectPath="\Switches\Default Work Unit\Floor_Material\Glass" GUID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

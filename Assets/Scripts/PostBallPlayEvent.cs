@@ -17,4 +17,15 @@ public class PostBallPlayEvent : MonoBehaviour
     {
         
     }
+
+      private void OnCollisionEnter(Collision other)
+    {
+        Debug.LogWarning("Hit: " + other.gameObject.name);
+        var soundMat = other.gameObject.GetComponent<SoundMaterial>();
+        if (soundMat != null)
+        {
+            soundMat.Switch(gameObject);
+            //BallRollEvent.Post(gameObject);
+        }
+    }
 }

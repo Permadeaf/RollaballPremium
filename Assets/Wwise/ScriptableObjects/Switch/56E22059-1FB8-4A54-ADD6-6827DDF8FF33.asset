@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Wood
   id: 2058049674
   guid: 56E22059-1FB8-4A54-ADD6-6827DDF8FF33
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 7e522774df16ba241abd46e6e431dde7, type: 2}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: a78ae55dd3c0ffc459ad128e99bd722b, type: 2}

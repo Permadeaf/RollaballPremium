@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1789070164080981505, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}
       propertyPath: material.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 5f38cc3c36321f346ad070e0e65d4313, type: 2}
+      objectReference: {fileID: 11400000, guid: 5f6a5c14b54e98c498c6fef843a9c062, type: 2}
     - target: {fileID: 1789070164080981506, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}
       propertyPath: m_RootOrder
       value: 0

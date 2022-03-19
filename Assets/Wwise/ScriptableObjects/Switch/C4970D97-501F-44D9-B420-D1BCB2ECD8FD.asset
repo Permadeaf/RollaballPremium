@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Laminate
   id: 2129253700
   guid: C4970D97-501F-44D9-B420-D1BCB2ECD8FD
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 7e522774df16ba241abd46e6e431dde7, type: 2}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: a78ae55dd3c0ffc459ad128e99bd722b, type: 2}

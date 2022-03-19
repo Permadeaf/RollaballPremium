@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Glass
   id: 2449969375
   guid: BEC097D5-772A-4F24-8AE4-61062A2E67CB
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: a78ae55dd3c0ffc459ad128e99bd722b, type: 2}

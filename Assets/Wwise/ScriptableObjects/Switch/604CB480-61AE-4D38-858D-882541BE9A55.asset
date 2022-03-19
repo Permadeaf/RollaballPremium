@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Felt
   id: 3049959702
   guid: 604CB480-61AE-4D38-858D-882541BE9A55
-  WwiseSwitchGroupReference: {fileID: 11400000, guid: 7e522774df16ba241abd46e6e431dde7, type: 2}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: a78ae55dd3c0ffc459ad128e99bd722b, type: 2}

@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{157CBA60-C77D-423C-8413-B13E62D08FCA}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Default" ID="{E4FE77FB-8196-4CB4-B7E7-340EF9B4C4C2}" ShortID="999694094">
+				<ActorMixer Name="Player" ID="{E4FE77FB-8196-4CB4-B7E7-340EF9B4C4C2}" ShortID="999694094">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
@@ -434,6 +434,268 @@
 										<SwitchRef Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
 										<ItemList>
 											<ItemRef Name="Ball Roll Glass" ID="{4313BC48-2ED4-4E8A-87A1-C3F327035D4D}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Impact" ID="{4F3CC8DB-B23C-4C9C-BF6E-3B2DB88C232A}" ShortID="22577160">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}" WorkUnitID="{CDA50ED3-C539-43BE-8C81-9FF4DB396942}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Floor_Material" ID="{CBD79FF2-6B5A-4A09-BE1A-1CC721A31F7E}" WorkUnitID="{CDA50ED3-C539-43BE-8C81-9FF4DB396942}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Impact Glass" ID="{91602792-6230-4FE9-B1F8-58FDF9D03811}" ShortID="660036726">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Impact Wood on Glass(2)" ID="{1430075C-E208-4CAB-A19D-D8DE044D801B}" ShortID="985702659">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Glass(2)" ID="{C3428A2B-FE8D-4CE6-BEC6-F76DB1E9DFDC}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Glass(2).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="429327741"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Glass(2)" ID="{C3428A2B-FE8D-4CE6-BEC6-F76DB1E9DFDC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact Wood on Glass(3)" ID="{5B58C100-A4ED-47CC-B760-1E5389B73DEC}" ShortID="1023417888">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Glass(3)" ID="{569A670C-0EF5-4F1D-8832-E834B136F5D7}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Glass(3).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="624853772"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Glass(3)" ID="{569A670C-0EF5-4F1D-8832-E834B136F5D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact Wood on Glass(4)" ID="{4183B562-0209-47FD-AAF7-DAB7D0DB2851}" ShortID="695800975">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Glass(4)" ID="{FD8F4C56-7931-4CC0-8125-402C9F47061F}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Glass(4).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="670321966"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Glass(4)" ID="{FD8F4C56-7931-4CC0-8125-402C9F47061F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact Wood on Glass" ID="{14B52660-9F23-4FB1-8225-06E82C941AC2}" ShortID="76239065">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Glass" ID="{A14B1D58-66E8-420C-A1CE-1ABA8408E0B7}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Glass.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="312692166"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Glass" ID="{A14B1D58-66E8-420C-A1CE-1ABA8408E0B7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Impact Laminate" ID="{260B35F1-8FAD-493C-8964-0687373C673A}" ShortID="890531563">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Impact Wood on Laminate(2)" ID="{8C23FBAD-DCCE-4F68-B6AD-7CB9F918FC21}" ShortID="415625642">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Laminate(2)" ID="{95D06537-0B45-4EE0-AB1F-0FB570D5CB3B}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Laminate(2).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1059343500"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Laminate(2)" ID="{95D06537-0B45-4EE0-AB1F-0FB570D5CB3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact Wood on Laminate(3)" ID="{8E7FF97F-641F-42CC-885D-E2D3F87DB927}" ShortID="766502016">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Laminate(3)" ID="{6A525DB1-903C-4268-AB9E-6E96B70A2ECD}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Laminate(3).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="564327232"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Laminate(3)" ID="{6A525DB1-903C-4268-AB9E-6E96B70A2ECD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact Wood on Laminate(4)" ID="{F1B09EDC-4C73-400D-80A5-0910A9C27AA1}" ShortID="840490252">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Laminate(4)" ID="{87B893E3-1AFA-4334-8C49-F65F34A79FF6}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Laminate(4).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449003089"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Laminate(4)" ID="{87B893E3-1AFA-4334-8C49-F65F34A79FF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Impact Wood on Laminate" ID="{212B141C-3FC8-4E7E-90B9-99A8888565D4}" ShortID="217731463">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Impact Wood on Laminate" ID="{119B7569-28B5-4289-8E39-611CDC0B346B}">
+													<Language>SFX</Language>
+													<AudioFile>Impact Wood on Laminate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="892614448"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Impact Wood on Laminate" ID="{119B7569-28B5-4289-8E39-611CDC0B346B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Impact Glass" ID="{91602792-6230-4FE9-B1F8-58FDF9D03811}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Impact Laminate" ID="{260B35F1-8FAD-493C-8964-0687373C673A}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
+										<ItemList>
+											<ItemRef Name="Impact Glass" ID="{91602792-6230-4FE9-B1F8-58FDF9D03811}"/>
+											<ItemRef Name="Impact Laminate" ID="{260B35F1-8FAD-493C-8964-0687373C673A}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

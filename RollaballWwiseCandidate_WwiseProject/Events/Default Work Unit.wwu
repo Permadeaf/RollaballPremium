@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Ball_Impact" ID="{1A01628C-E747-441D-B0C4-9FF8A4129B8F}">
+					<ChildrenList>
+						<Action Name="" ID="{49803190-75D0-484F-9DA9-7FFF8EDEE7F0}" ShortID="899833908">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Impact" ID="{4F3CC8DB-B23C-4C9C-BF6E-3B2DB88C232A}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

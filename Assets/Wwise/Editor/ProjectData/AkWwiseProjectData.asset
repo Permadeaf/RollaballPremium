@@ -201,7 +201,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d30ea5cd39c5be438c819ff4db396942
     GuidInternal: 
-    m_lastTime: -8585539717605282458
+    m_lastTime: -8585538921430377305
     List:
     - name: Floor_Material
       guid: f29fd7cb5a6b094abe1a1cc721a31f7e
@@ -250,6 +250,22 @@ MonoBehaviour:
         - ElementName: Felt
           ObjectType: 10
           guid: 80b44c60ae61384d858d882541be9a55
+      - name: Glass
+        guid: d597c0be2a77244f8ae461062a2e67cb
+        id: 2449969375
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d30ea5cd39c5be438c819ff4db396942
+        - ElementName: Floor_Material
+          ObjectType: 11
+          guid: f29fd7cb5a6b094abe1a1cc721a31f7e
+        - ElementName: Glass
+          ObjectType: 10
+          guid: d597c0be2a77244f8ae461062a2e67cb
       - name: Laminate
         guid: 970d97c41f50d944b420d1bcb2ecd8fd
         id: 2129253700
@@ -300,7 +316,7 @@ MonoBehaviour:
     m_lastTime: -8585544863451849132
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0f0000001000000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

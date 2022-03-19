@@ -7,12 +7,12 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}"/>
-							<Value>15</Value>
+							<Value>9.1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
+						<CurrentSwitchRef Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

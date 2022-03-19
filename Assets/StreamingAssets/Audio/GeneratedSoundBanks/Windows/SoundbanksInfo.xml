@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\RollaballWwiseCandidate_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\RollaballWwiseCandidate_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Unity Projects\RollaballWwiseCandidate\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Users\rboyl\Documents\Unity Projects\RollaballPremium\RollaballWwiseCandidate_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="2597955294">
+		<SoundBank Id="2858921253" Language="SFX" Hash="2810081806">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>

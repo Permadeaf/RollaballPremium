@@ -692,10 +692,15 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
+										<SwitchRef Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
+										<ItemList>
+											<ItemRef Name="Impact Laminate" ID="{260B35F1-8FAD-493C-8964-0687373C673A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
 										<SwitchRef Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
 										<ItemList>
 											<ItemRef Name="Impact Glass" ID="{91602792-6230-4FE9-B1F8-58FDF9D03811}"/>
-											<ItemRef Name="Impact Laminate" ID="{260B35F1-8FAD-493C-8964-0687373C673A}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

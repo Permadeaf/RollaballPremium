@@ -9,6 +9,7 @@
 						<Switch Name="Wood" ID="{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}"/>
 						<Switch Name="Laminate" ID="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}"/>
 						<Switch Name="Felt" ID="{604CB480-61AE-4D38-858D-882541BE9A55}"/>
+						<Switch Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

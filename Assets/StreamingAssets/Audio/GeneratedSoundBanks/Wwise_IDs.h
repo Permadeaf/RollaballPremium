@@ -28,6 +28,7 @@ namespace AK
             {
                 static const AkUniqueID CONCRETE = 841620460U;
                 static const AkUniqueID FELT = 3049959702U;
+                static const AkUniqueID GLASS = 2449969375U;
                 static const AkUniqueID LAMINATE = 2129253700U;
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH

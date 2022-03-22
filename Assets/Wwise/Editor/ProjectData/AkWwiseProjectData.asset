@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b404a388f633424c910b0fdeaa363d95
     GuidInternal: 
-    m_lastTime: -8585541227466350679
+    m_lastTime: -8585536306542104864
     List:
     - name: AllInOne
       guid: cfa7df1058d83a4f939ee61894d55c60
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: d89e97b25af6bf498fcfddfcf91b34d1
     GuidInternal: 
-    m_lastTime: -8585540596989962854
+    m_lastTime: -8585538853603533010
     List:
+    - name: Ball_Impact
+      guid: 8c62011a47e71d44b0c49ff8a4129b8f
+      id: 1165162655
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d89e97b25af6bf498fcfddfcf91b34d1
+      - ElementName: Ball_Impact
+        ObjectType: 3
+        guid: 8c62011a47e71d44b0c49ff8a4129b8f
+      Path: Events\Default Work Unit\Ball_Impact
+      maxAttenuation: 0
+      maxDuration: 0.587937
+      minDuration: 0.108685
     - name: Ball_Play
       guid: 43869bc57ca20143bc9db9432a061dbe
       id: 1812213047
@@ -110,7 +127,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 43869bc57ca20143bc9db9432a061dbe
       Path: Events\Default Work Unit\Ball_Play
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
     - name: PickupSound
@@ -159,7 +176,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a1d7f00dc6709541b4d2ebbfd3e91420
     GuidInternal: 
-    m_lastTime: -8585540596989773361
+    m_lastTime: -8585536306542164706
     List:
     - name: Player_Speed
       guid: 98fa480216582048964ac6e3b9695e6c
@@ -175,6 +192,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 98fa480216582048964ac6e3b9695e6c
       Path: Game Parameters\Default Work Unit\Player_Speed
+    - name: Vertical_Speed
+      guid: 55404b00222ef84c9174344d67b64d96
+      id: 805906735
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a1d7f00dc6709541b4d2ebbfd3e91420
+      - ElementName: Vertical_Speed
+        ObjectType: 13
+        guid: 55404b00222ef84c9174344d67b64d96
+      Path: Game Parameters\Default Work Unit\Vertical_Speed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -201,7 +232,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d30ea5cd39c5be438c819ff4db396942
     GuidInternal: 
-    m_lastTime: -8585538921430377305
+    m_lastTime: -8585538751138021060
     List:
     - name: Floor_Material
       guid: f29fd7cb5a6b094abe1a1cc721a31f7e
@@ -316,7 +347,7 @@ MonoBehaviour:
     m_lastTime: -8585544863451849132
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0f0000001000000011000000
+  ExpandedWaapiItemIds: 05000000060000001000000011000000120000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

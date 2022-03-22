@@ -11,21 +11,99 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1265891613">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1241572621">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="1070682174">
+		<SoundBank Id="2858921253" Language="SFX" Hash="284816627">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1165162655" Name="Ball_Impact" ObjectPath="\Events\Default Work Unit\Ball_Impact" DurationType="OneShot" DurationMin="0.108685" DurationMax="0.587937">
+					<IncludedMemoryFiles>
+						<File Id="173535225" Language="SFX">
+							<ShortName>Impact Wood on Wood(2).wav</ShortName>
+							<Path>SFX\Impact Wood on Wood(2)_10C4C929.wem</Path>
+						</File>
+						<File Id="312692166" Language="SFX">
+							<ShortName>Impact Wood on Glass.wav</ShortName>
+							<Path>SFX\Impact Wood on Glass_10C4C929.wem</Path>
+						</File>
+						<File Id="429327741" Language="SFX">
+							<ShortName>Impact Wood on Glass(2).wav</ShortName>
+							<Path>SFX\Impact Wood on Glass(2)_10C4C929.wem</Path>
+						</File>
+						<File Id="449003089" Language="SFX">
+							<ShortName>Impact Wood on Laminate(4).wav</ShortName>
+							<Path>SFX\Impact Wood on Laminate(4)_10C4C929.wem</Path>
+						</File>
+						<File Id="541952417" Language="SFX">
+							<ShortName>Impact Wood on Wood(4).wav</ShortName>
+							<Path>SFX\Impact Wood on Wood(4)_10C4C929.wem</Path>
+						</File>
+						<File Id="564327232" Language="SFX">
+							<ShortName>Impact Wood on Laminate(3).wav</ShortName>
+							<Path>SFX\Impact Wood on Laminate(3)_10C4C929.wem</Path>
+						</File>
+						<File Id="624853772" Language="SFX">
+							<ShortName>Impact Wood on Glass(3).wav</ShortName>
+							<Path>SFX\Impact Wood on Glass(3)_10C4C929.wem</Path>
+						</File>
+						<File Id="666569894" Language="SFX">
+							<ShortName>Impact Wood on Wood(3).wav</ShortName>
+							<Path>SFX\Impact Wood on Wood(3)_10C4C929.wem</Path>
+						</File>
+						<File Id="670321966" Language="SFX">
+							<ShortName>Impact Wood on Glass(4).wav</ShortName>
+							<Path>SFX\Impact Wood on Glass(4)_10C4C929.wem</Path>
+						</File>
+						<File Id="892614448" Language="SFX">
+							<ShortName>Impact Wood on Laminate.wav</ShortName>
+							<Path>SFX\Impact Wood on Laminate_10C4C929.wem</Path>
+						</File>
+						<File Id="948656842" Language="SFX">
+							<ShortName>Impact Wood on Wood.wav</ShortName>
+							<Path>SFX\Impact Wood on Wood_10C4C929.wem</Path>
+						</File>
+						<File Id="1059343500" Language="SFX">
+							<ShortName>Impact Wood on Laminate(2).wav</ShortName>
+							<Path>SFX\Impact Wood on Laminate(2)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}">
+							<Media>
+								<File Id="173535225"/>
+								<File Id="541952417"/>
+								<File Id="666569894"/>
+								<File Id="948656842"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}">
+							<Media>
+								<File Id="449003089"/>
+								<File Id="564327232"/>
+								<File Id="892614448"/>
+								<File Id="1059343500"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}">
+							<Media>
+								<File Id="312692166"/>
+								<File Id="429327741"/>
+								<File Id="624853772"/>
+								<File Id="670321966"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1812213047" Name="Ball_Play" ObjectPath="\Events\Default Work Unit\Ball_Play" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="43904164" Language="SFX">
 							<ShortName>Ball Roll Wood on Wood.WAV</ShortName>
-							<Path>SFX\Ball Roll Wood on Wood_10C4C929.wem</Path>
+							<Path>SFX\Ball Roll Wood on Wood_D79FB2B7.wem</Path>
 						</File>
 						<File Id="97892574" Language="SFX">
 							<ShortName>Ball Roll Wood Glass.wav</ShortName>
@@ -73,6 +151,7 @@
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
+				<GameParameter Id="805906735" Name="Vertical_Speed" ObjectPath="\Game Parameters\Default Work Unit\Vertical_Speed"/>
 				<GameParameter Id="1062779386" Name="Player_Speed" ObjectPath="\Game Parameters\Default Work Unit\Player_Speed"/>
 			</GameParameters>
 			<SwitchGroups>

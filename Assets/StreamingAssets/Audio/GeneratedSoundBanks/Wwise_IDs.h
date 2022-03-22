@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BALL_IMPACT = 1165162655U;
         static const AkUniqueID BALL_PLAY = 1812213047U;
         static const AkUniqueID PICKUPSOUND = 3784267794U;
         static const AkUniqueID WALLCOLLISION = 1835233263U;
@@ -39,6 +40,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PLAYER_SPEED = 1062779386U;
+        static const AkUniqueID VERTICAL_SPEED = 805906735U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

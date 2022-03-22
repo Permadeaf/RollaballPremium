@@ -6,6 +6,7 @@
 				<SoundBank Name="AllInOne" ID="{10DFA7CF-D858-4F3A-939E-E61894D55C60}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Ball_Play" ID="{C59B8643-A27C-4301-BC9D-B9432A061DBE}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ball_Impact" ID="{1A01628C-E747-441D-B0C4-9FF8A4129B8F}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="WallCollision" ID="{67BF1FD5-C210-4B28-8C3E-3C5B214F69B5}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PickupSound" ID="{A6A9F66A-FE6F-4C70-89D2-78FE9292EFA7}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

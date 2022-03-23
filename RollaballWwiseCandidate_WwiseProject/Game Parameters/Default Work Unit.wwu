@@ -20,6 +20,7 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

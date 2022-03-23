@@ -17,6 +17,7 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	805906735	Vertical_Speed			\Default Work Unit\Vertical_Speed	
 	1062779386	Player_Speed			\Default Work Unit\Player_Speed	
+	2043068518	Distance_To_Ground			\Default Work Unit\Distance_To_Ground	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	43904164	Ball Roll Wood	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Ball Roll Wood on Wood_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Roll\Ball Roll Wood		6060372

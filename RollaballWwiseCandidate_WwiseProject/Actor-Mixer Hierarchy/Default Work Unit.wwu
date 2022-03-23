@@ -5,6 +5,53 @@
 			<ChildrenList>
 				<ActorMixer Name="Player" ID="{E4FE77FB-8196-4CB4-B7E7-340EF9B4C4C2}" ShortID="999694094">
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom>
+								<Attenuation Name="Attenuation (Custom)" ID="{391D9D51-6CE8-413A-A8AC-253316635430}" ShortID="613095855">
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{BBB00C2E-9C0E-4182-A0EC-AE4ADD3B8D81}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+														</Point>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
 						</Reference>
@@ -209,38 +256,46 @@
 						</Sound>
 						<SwitchContainer Name="Ball Roll" ID="{7FE09C8F-180C-4D4B-9D36-A216B5B22A80}" ShortID="139849333">
 							<PropertyList>
-								<Property Name="Pitch" Type="int32">
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
 									<RTPCList>
-										<RTPC Name="" ID="{AE4EA781-5759-4B4D-91DB-8883F69EBE52}" ShortID="510670741">
+										<RTPC Name="" ID="{923CCE8B-6FB1-4E04-9D6F-645F65E8DB53}" ShortID="534652906">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+													<ObjectRef Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{93DC5BC8-A774-4E4E-8F82-F5498A1E83C0}">
+											<Curve Name="" ID="{7B997E42-F808-4EC8-8393-AA19BA8B5AC2}">
 												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="65537"/>
+													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
 														<YPos>0</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>InvertedSCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>15</XPos>
-														<YPos>816</YPos>
+														<XPos>0.5</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.6</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
 											</Curve>
 										</RTPC>
-									</RTPCList>
-								</Property>
-								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<RTPCList>
 										<RTPC Name="" ID="{2B1DEEAA-8166-4E57-A9AE-DA71D13E7319}" ShortID="121847364">
 											<ReferenceList>
 												<Reference Name="ControlInput">
@@ -296,6 +351,40 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{18653580-8776-494F-ACE6-B26B5B701E23}" ShortID="978706112">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1D8882B9-E24D-40CC-8019-720E82854E7B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>InvertedSCurve</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>15</XPos>
+																<YPos>816</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -384,6 +473,35 @@
 								<Sound Name="Ball Roll Glass" ID="{4313BC48-2ED4-4E8A-87A1-C3F327035D4D}" ShortID="259567430">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{E7DE4D3B-7E34-491C-A0D0-27C750F7DBD9}" ShortID="325433363">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{32FB600A-D785-4595-A821-F6E0D4507622}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>InvertedSCurve</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>15</XPos>
+																<YPos>179</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-5</Value>
@@ -415,6 +533,35 @@
 								<Sound Name="Ball Roll Wood" ID="{5A4D2B73-A3B5-4341-A416-F59505BA82A1}" ShortID="377638853">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<RTPCList>
+												<RTPC Name="" ID="{BEC92529-8C86-40AB-86C0-8ED978779B14}" ShortID="199854168">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C988F529-7F29-4C49-835B-393386BB83F8}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>InvertedSCurve</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>15</XPos>
+																<YPos>816</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -477,6 +624,9 @@
 						<SwitchContainer Name="Impact" ID="{4F3CC8DB-B23C-4C9C-BF6E-3B2DB88C232A}" ShortID="22577160">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{5BA6B995-CF7C-407E-B48C-F7F6C11DC776}" ShortID="356618600">
 											<ReferenceList>
@@ -522,7 +672,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>7</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -773,6 +923,11 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -915,6 +1070,9 @@
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{4246FCB8-4894-497A-8D5E-013A4AF6E5F6}"/>
+					</PositioningInfo>
 					<ObjectLists/>
 				</ActorMixer>
 			</ChildrenList>

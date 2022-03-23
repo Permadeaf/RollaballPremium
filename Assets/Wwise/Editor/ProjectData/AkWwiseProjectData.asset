@@ -110,7 +110,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 8c62011a47e71d44b0c49ff8a4129b8f
       Path: Events\Default Work Unit\Ball_Impact
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.587937
       minDuration: 0.108685
     - name: Ball_Play
@@ -127,7 +127,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 43869bc57ca20143bc9db9432a061dbe
       Path: Events\Default Work Unit\Ball_Play
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: PickupSound
@@ -144,7 +144,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 6af6a9a66ffe704c89d278fe9292efa7
       Path: Events\Default Work Unit\PickupSound
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.446171
       minDuration: 0.446171
     - name: WallCollision
@@ -161,7 +161,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: d51fbf6710c2284b8c3e3c5b214f69b5
       Path: Events\Default Work Unit\WallCollision
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.106485
       minDuration: 0.106485
   RtpcWwu:
@@ -176,8 +176,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a1d7f00dc6709541b4d2ebbfd3e91420
     GuidInternal: 
-    m_lastTime: -8585536306542164706
+    m_lastTime: -8585536119498076532
     List:
+    - name: Distance_To_Ground
+      guid: 59d0acdfffe08849965c6e3d8c90b131
+      id: 2043068518
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a1d7f00dc6709541b4d2ebbfd3e91420
+      - ElementName: Distance_To_Ground
+        ObjectType: 13
+        guid: 59d0acdfffe08849965c6e3d8c90b131
+      Path: Game Parameters\Default Work Unit\Distance_To_Ground
     - name: Player_Speed
       guid: 98fa480216582048964ac6e3b9695e6c
       id: 1062779386
@@ -347,7 +361,7 @@ MonoBehaviour:
     m_lastTime: -8585544863451849132
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000001000000011000000120000001500000016000000
+  ExpandedWaapiItemIds: 0100000005000000060000001000000011000000120000001500000016000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

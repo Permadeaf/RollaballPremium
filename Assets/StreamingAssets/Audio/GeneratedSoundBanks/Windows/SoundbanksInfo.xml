@@ -11,17 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1241572621">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2879569500">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="284816627">
+		<SoundBank Id="2858921253" Language="SFX" Hash="2416149885">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1165162655" Name="Ball_Impact" ObjectPath="\Events\Default Work Unit\Ball_Impact" DurationType="OneShot" DurationMin="0.108685" DurationMax="0.587937">
+				<Event Id="1165162655" Name="Ball_Impact" ObjectPath="\Events\Default Work Unit\Ball_Impact" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.108685" DurationMax="0.587937">
 					<IncludedMemoryFiles>
 						<File Id="173535225" Language="SFX">
 							<ShortName>Impact Wood on Wood(2).wav</ShortName>
@@ -99,7 +99,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1812213047" Name="Ball_Play" ObjectPath="\Events\Default Work Unit\Ball_Play" DurationType="Infinite">
+				<Event Id="1812213047" Name="Ball_Play" ObjectPath="\Events\Default Work Unit\Ball_Play" MaxAttenuation="100." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="43904164" Language="SFX">
 							<ShortName>Ball Roll Wood on Wood.WAV</ShortName>
@@ -133,7 +133,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="3784267794" Name="PickupSound" ObjectPath="\Events\Default Work Unit\PickupSound" DurationType="OneShot" DurationMin="0.446171" DurationMax="0.446171">
+				<Event Id="3784267794" Name="PickupSound" ObjectPath="\Events\Default Work Unit\PickupSound" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.446171" DurationMax="0.446171">
 					<IncludedMemoryFiles>
 						<File Id="979774808" Language="SFX">
 							<ShortName>Door maybe.wav</ShortName>
@@ -141,7 +141,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1835233263" Name="WallCollision" ObjectPath="\Events\Default Work Unit\WallCollision" DurationType="OneShot" DurationMin="0.106485" DurationMax="0.106485">
+				<Event Id="1835233263" Name="WallCollision" ObjectPath="\Events\Default Work Unit\WallCollision" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.106485" DurationMax="0.106485">
 					<IncludedMemoryFiles>
 						<File Id="135709545" Language="SFX">
 							<ShortName>Hit Wall Wood.wav</ShortName>
@@ -153,6 +153,7 @@
 			<GameParameters>
 				<GameParameter Id="805906735" Name="Vertical_Speed" ObjectPath="\Game Parameters\Default Work Unit\Vertical_Speed"/>
 				<GameParameter Id="1062779386" Name="Player_Speed" ObjectPath="\Game Parameters\Default Work Unit\Player_Speed"/>
+				<GameParameter Id="2043068518" Name="Distance_To_Ground" ObjectPath="\Game Parameters\Default Work Unit\Distance_To_Ground"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="3964766495" Name="Floor_Material" ObjectPath="\Switches\Default Work Unit\Floor_Material" GUID="{CBD79FF2-6B5A-4A09-BE1A-1CC721A31F7E}">

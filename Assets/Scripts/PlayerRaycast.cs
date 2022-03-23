@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class PlayerRaycast : MonoBehaviour
 {
-    public AK.Wwise.RTPC DistanceToGroundRTPC;
-    public PlayerRaycast DistanceToGround;
+    RaycastHit hit = new RaycastHit();
+
+    public RaycastHit HitData { get { return hit; } }
+
+    bool raycastHit = false;
+
+    public bool RaycastHit { get { return raycastHit; } }
+
 
     // Start is called before the first frame update
     void Start()
@@ -13,20 +19,13 @@ public class PlayerRaycast : MonoBehaviour
 
     }
 
-    
+
     void Update()
     {
-        RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(transform.position, -Vector3.up, out hit))
-        {
-            var distanceToGround = hit.distance;
-            
-        }
-        DistanceToGroundRTPC.SetGlobalValue(hit.distance);
-        
+        raycastHit = Physics.Raycast(transform.position, -Vector3.up, out hit);
     }
 
-    
+
     // private void OnCollisionEnter(Collision other)
     // {
     //     Debug.LogWarning("Hit: " + other.gameObject.name);

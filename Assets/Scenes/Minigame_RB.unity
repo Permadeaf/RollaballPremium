@@ -143,6 +143,8 @@ GameObject:
   - component: {fileID: 297193290}
   - component: {fileID: 297193292}
   - component: {fileID: 297193293}
+  - component: {fileID: 297193295}
+  - component: {fileID: 297193296}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -369,6 +371,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0.75
+--- !u!114 &297193295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297193282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08347490093191842878230bcb9876ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceToGroundRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 652687e54e427d84cb1f91d80b520939, type: 2}
+  DistanceToGround: {fileID: 297193293}
+--- !u!114 &297193296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297193282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1c8b7ac1ba89f4ea50eb1036eb6a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VerticalSpeedRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fc01ba5826e6b894d88dc857400a62ef, type: 2}
+  myRigidbody: {fileID: 297193283}
 --- !u!1001 &350765255
 PrefabInstance:
   m_ObjectHideFlags: 0

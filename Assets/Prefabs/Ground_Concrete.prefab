@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4179516019576972409, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 82e1c9a2b619d7f4cac5bb19202f2fb4, type: 2}
     - target: {fileID: 1789070164080981505, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}
       propertyPath: material.WwiseObjectReference
       value: 
@@ -63,5 +67,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground_Concrete
       objectReference: {fileID: 0}
+    - target: {fileID: 9104238875478910318, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}
+      propertyPath: material.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 82e1c9a2b619d7f4cac5bb19202f2fb4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}

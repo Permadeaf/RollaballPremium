@@ -20,7 +20,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Glass" ID="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

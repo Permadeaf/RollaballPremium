@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{157CBA60-C77D-423C-8413-B13E62D08FCA}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Player" ID="{E4FE77FB-8196-4CB4-B7E7-340EF9B4C4C2}" ShortID="999694094">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>

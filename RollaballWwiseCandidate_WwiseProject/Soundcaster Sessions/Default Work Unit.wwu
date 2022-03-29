@@ -4,10 +4,24 @@
 		<WorkUnit Name="Default Work Unit" ID="{D308BA78-E24E-4699-92A8-2A11C99AF629}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="New Soundcaster Session" ID="{28FD8E85-FEA1-4784-B8B6-BD3A169C0DF2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="WindySounds" ID="{A982D25F-D90A-40C0-B231-E0936D1D8615}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ball Roll" ID="{7FE09C8F-180C-4D4B-9D36-A216B5B22A80}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Impact" ID="{4F3CC8DB-B23C-4C9C-BF6E-3B2DB88C232A}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}"/>
-							<Value>8.1</Value>
+							<Value>6.9</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>
@@ -20,7 +34,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Concrete" ID="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}"/>
+						<CurrentSwitchRef Name="Wood" ID="{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

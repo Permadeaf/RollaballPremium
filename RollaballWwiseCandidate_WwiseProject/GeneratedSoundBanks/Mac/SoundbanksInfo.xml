@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="1668562427">
+		<SoundBank Id="2858921253" Language="SFX" Hash="1874578205">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
@@ -178,6 +178,14 @@
 						<File Id="135709545" Language="SFX">
 							<ShortName>Hit Wall Wood.wav</ShortName>
 							<Path>SFX\Hit Wall Wood_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1695464326" Name="WindyAmbiencePlay" ObjectPath="\Events\Default Work Unit\WindyAmbiencePlay" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="43967976" Language="SFX">
+							<ShortName>FrontYardWindyDay(3).wav</ShortName>
+							<Path>SFX\FrontYardWindyDay(3)_6C1527B5.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

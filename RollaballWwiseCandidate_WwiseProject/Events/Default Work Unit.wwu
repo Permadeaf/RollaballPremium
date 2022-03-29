@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="WindyAmbiencePlay" ID="{F8E3DA11-50F4-48B7-AAAB-867937AAB96F}">
+					<ChildrenList>
+						<Action Name="" ID="{A4BB8786-FF0F-4879-BAF2-2E63A47B6E7F}" ShortID="314203725">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindySounds" ID="{A982D25F-D90A-40C0-B231-E0936D1D8615}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

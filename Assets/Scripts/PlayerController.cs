@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     JumpCheck jumpCheck;
 
+    [SerializeField]
+    bool canJump = true;
+
     Vector3 initialPosition;
 
     // Start is called before the first frame update
@@ -46,7 +49,7 @@ public class PlayerController : MonoBehaviour
     void OnJump(InputValue jumpVal)
     {
         //Debug.LogWarning("Jumped");
-        if (!jumpCheck.IsInAir() && jumpVal.isPressed)
+        if (canJump && !jumpCheck.IsInAir() && jumpVal.isPressed)
         {
             rb.AddForce(Vector3.up * jumpForce);
         }

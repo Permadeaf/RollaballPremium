@@ -31,42 +31,42 @@ public class AkEventCallbackMsg
 /// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=soundengine__events.html" target="_blank">Integration Details - Events</a> (Note: This is described in the Wwise SDK documentation.)
 public class AkEvent : AkDragDropTriggerHandler
 #if UNITY_EDITOR
-	, AK.Wwise.IMigratable
+    , AK.Wwise.IMigratable
 #endif
 {
-	/// Replacement action.  See AK::SoundEngine::ExecuteEventOnAction()
-	public AkActionOnEventType actionOnEventType = AkActionOnEventType.AkActionOnEventType_Stop;
+    /// Replacement action.  See AK::SoundEngine::ExecuteEventOnAction()
+    public AkActionOnEventType actionOnEventType = AkActionOnEventType.AkActionOnEventType_Stop;
 
-	/// Fade curve to use with the new Action.  See AK::SoundEngine::ExecuteEventOnAction()
-	public AkCurveInterpolation curveInterpolation = AkCurveInterpolation.AkCurveInterpolation_Linear;
+    /// Fade curve to use with the new Action.  See AK::SoundEngine::ExecuteEventOnAction()
+    public AkCurveInterpolation curveInterpolation = AkCurveInterpolation.AkCurveInterpolation_Linear;
 
-	/// Enables additional options to reuse existing events.  Use it to transform a Play event into a Stop event without having to define one in the Wwise Project.
-	public bool enableActionOnEvent = false;
+    /// Enables additional options to reuse existing events.  Use it to transform a Play event into a Stop event without having to define one in the Wwise Project.
+    public bool enableActionOnEvent = false;
 
-	public AK.Wwise.Event data = new AK.Wwise.Event();
-	protected override AK.Wwise.BaseType WwiseType { get { return data; } }
+    public AK.Wwise.Event data = new AK.Wwise.Event();
+    protected override AK.Wwise.BaseType WwiseType { get { return data; } }
 
-	[System.Serializable]
-	public class CallbackData
-	{
-		public AK.Wwise.CallbackFlags Flags;
-		public string FunctionName;
-		public UnityEngine.GameObject GameObject;
+    [System.Serializable]
+    public class CallbackData
+    {
+        public AK.Wwise.CallbackFlags Flags;
+        public string FunctionName;
+        public UnityEngine.GameObject GameObject;
 
-		public void CallFunction(AkEventCallbackMsg eventCallbackMsg)
-		{
-			if (((uint)eventCallbackMsg.type & Flags.value) != 0 && GameObject)
-				GameObject.SendMessage(FunctionName, eventCallbackMsg);
-		}
-	}
+        public void CallFunction(AkEventCallbackMsg eventCallbackMsg)
+        {
+            if (((uint)eventCallbackMsg.type & Flags.value) != 0 && GameObject)
+                GameObject.SendMessage(FunctionName, eventCallbackMsg);
+        }
+    }
 
-	public bool useCallbacks = false;
-	public System.Collections.Generic.List<CallbackData> Callbacks = new System.Collections.Generic.List<CallbackData>();
+    public bool useCallbacks = false;
+    public System.Collections.Generic.List<CallbackData> Callbacks = new System.Collections.Generic.List<CallbackData>();
 
-	public uint playingId = AkSoundEngine.AK_INVALID_PLAYING_ID;
+    public uint playingId = AkSoundEngine.AK_INVALID_PLAYING_ID;
 
-	/// Game object onto which the Event will be posted.  By default, when empty, it is posted on the same object on which the component was added.
-	public UnityEngine.GameObject soundEmitterObject;
+    /// Game object onto which the Event will be posted.  By default, when empty, it is posted on the same object on which the component was added.
+    public UnityEngine.GameObject soundEmitterObject;
 
 	/// Duration of the fade.  See AK::SoundEngine::ExecuteEventOnAction()
 	public float transitionDuration = 0.0f;

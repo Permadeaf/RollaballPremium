@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657892, g: 0.49641353, b: 0.5748163, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641305, b: 0.57481563, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1433538676262550899, guid: 7d110ac7d798cad468d3cb23d7cc2faa, type: 3}
+      propertyPath: triggerObject
+      value: 
+      objectReference: {fileID: 297193282}
     - target: {fileID: 5435707096555113255, guid: 7d110ac7d798cad468d3cb23d7cc2faa, type: 3}
       propertyPath: m_Name
       value: Ground_Wood
@@ -1070,6 +1074,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3779536837836599447, guid: f4f8153f95315c64daabedd8c08fc8c6, type: 3}
+      propertyPath: triggerObject
+      value: 
+      objectReference: {fileID: 297193282}
     - target: {fileID: 7852287222200239811, guid: f4f8153f95315c64daabedd8c08fc8c6, type: 3}
       propertyPath: m_Name
       value: Ground_Laminate
@@ -1332,6 +1340,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3779536837836599447, guid: 6a5ffc30d8441684d9979f9fdbf6b18f, type: 3}
+      propertyPath: triggerObject
+      value: 
+      objectReference: {fileID: 297193282}
     - target: {fileID: 7852287222200239811, guid: 6a5ffc30d8441684d9979f9fdbf6b18f, type: 3}
       propertyPath: m_Name
       value: Ground_Concrete (1)
@@ -1541,6 +1553,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3779536837836599447, guid: 6a5ffc30d8441684d9979f9fdbf6b18f, type: 3}
+      propertyPath: triggerObject
+      value: 
+      objectReference: {fileID: 297193282}
     - target: {fileID: 7852287222200239811, guid: 6a5ffc30d8441684d9979f9fdbf6b18f, type: 3}
       propertyPath: m_Name
       value: Ground_Concrete
@@ -1691,6 +1707,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3779536837836599447, guid: dd585c24371433b4fb81132289bb6de9, type: 3}
+      propertyPath: triggerObject
+      value: 
+      objectReference: {fileID: 297193282}
     - target: {fileID: 7852287222200239811, guid: dd585c24371433b4fb81132289bb6de9, type: 3}
       propertyPath: m_Name
       value: Ground_Glass

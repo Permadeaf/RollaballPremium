@@ -94,7 +94,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789070164080981534}
-  m_Material: {fileID: 13400000, guid: 4e6c13ad930f21d4795c478c2a148943, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -206,4 +206,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21a649a4075085b45ace1a0304fe2589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerObject: {fileID: 0}
+  triggerObject: {fileID: 7809841494303609849, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}

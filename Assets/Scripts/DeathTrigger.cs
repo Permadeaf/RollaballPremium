@@ -11,6 +11,7 @@ public class DeathTrigger : MonoBehaviour
         {
             player.ResetPosition();
             player.Body.velocity = Vector3.zero;
+            player.Body.angularVelocity = Vector3.zero;
         }
     }
 }

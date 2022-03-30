@@ -15,12 +15,12 @@ public class PostBallPlayEvent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-      private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision other)
     {
-        Debug.LogWarning("Hit: " + other.gameObject.name);
+        Debug.LogWarning("Hit: " + other.gameObject.name + " Velocity: " + other.relativeVelocity + " Collision Points: " + other.contactCount);
         var soundMat = other.gameObject.GetComponent<SoundMaterial>();
         if (soundMat != null)
         {

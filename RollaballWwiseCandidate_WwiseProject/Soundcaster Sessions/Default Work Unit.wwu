@@ -20,6 +20,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}"/>
 							<Value>6.9</Value>
 						</RTPCValue>
@@ -29,12 +33,12 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Vertical_Speed" ID="{004B4055-2E22-4CF8-9174-344D67B64D96}"/>
-							<Value>4.07103825136612</Value>
+							<Value>6.84576352609139</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Wood" ID="{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -21,6 +21,7 @@
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>
+				<GameParameter Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

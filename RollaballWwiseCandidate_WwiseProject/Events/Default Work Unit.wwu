@@ -34,6 +34,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{57D12FCC-DCBD-4FC9-B070-13D16291CD01}" ShortID="780590177">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ball Skid" ID="{F1EA114F-DBA5-4B5C-B187-8DD1BEB167F8}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Ball_Impact" ID="{1A01628C-E747-441D-B0C4-9FF8A4129B8F}">

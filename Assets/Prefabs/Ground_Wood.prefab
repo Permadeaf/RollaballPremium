@@ -51,6 +51,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1789070164080981533, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 7638d910d9796cd45a2d809dae066789, type: 2}
     - target: {fileID: 1789070164080981534, guid: 1df10a4f72eaa1c4d95284f5ac2d44f6, type: 3}
       propertyPath: m_Name
       value: Ground_Wood

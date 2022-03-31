@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="1953508314">
+		<SoundBank Id="2858921253" Language="SFX" Hash="513363627">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
@@ -88,7 +88,6 @@
 							<Path>SFX\Impact Wood on Laminate(2)_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}">
 							<Media>
@@ -143,7 +142,6 @@
 							<Path>SFX\RollSound_64491B21.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}">
 							<Media>
@@ -187,7 +185,7 @@
 					<IncludedMemoryFiles>
 						<File Id="43967976" Language="SFX">
 							<ShortName>FrontYardWindyDay(3).wav</ShortName>
-							<Path>SFX\FrontYardWindyDay(3)_6C1527B5.wem</Path>
+							<Path>SFX\FrontYardWindyDay(3)_379CED36.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

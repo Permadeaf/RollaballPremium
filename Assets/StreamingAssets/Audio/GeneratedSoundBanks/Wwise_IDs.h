@@ -40,8 +40,10 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ANGULAR_SPEED = 3041061349U;
         static const AkUniqueID DISTANCE_TO_GROUND = 2043068518U;
         static const AkUniqueID PLAYER_SPEED = 1062779386U;
+        static const AkUniqueID SKID_FACTOR = 2581107858U;
         static const AkUniqueID VERTICAL_SPEED = 805906735U;
     } // namespace GAME_PARAMETERS
 

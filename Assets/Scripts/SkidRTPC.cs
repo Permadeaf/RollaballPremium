@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SkidRTPC : MonoBehaviour
 {
+    public AK.Wwise.RTPC SkidFactor;
+    public AK.Wwise.RTPC AngularSpeed;
     [SerializeField]
     Rigidbody playerBody;
 
@@ -30,8 +32,11 @@ public class SkidRTPC : MonoBehaviour
         playerSpeed.y = 0;
 
 
+        SkidFactor.SetGlobalValue(Mathf.Abs(playerSpeed.magnitude - angularDist.magnitude));
+        AngularSpeed.SetGlobalValue(angularDist.magnitude);
 
         Debug.LogWarning("Skid: " + Mathf.Abs(playerSpeed.magnitude - angularDist.magnitude).ToString("F2"));
+        Debug.LogWarning("Spin: " + Mathf.Abs(angularDist.magnitude).ToString("F2"));
 
     }
 

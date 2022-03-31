@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Ball_Play" ID="{C59B8643-A27C-4301-BC9D-B9432A061DBE}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Ball Roll" ID="{7FE09C8F-180C-4D4B-9D36-A216B5B22A80}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -21,11 +25,15 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}"/>
-							<Value>50</Value>
+							<Value>15</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}"/>
-							<Value>6.9</Value>
+							<Value>6.6</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Angular_Speed" ID="{C17E3F57-7556-4895-A24C-30B3315CF2AF}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>
@@ -33,7 +41,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Vertical_Speed" ID="{004B4055-2E22-4CF8-9174-344D67B64D96}"/>
-							<Value>6.84576352609139</Value>
+							<Value>6.3</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

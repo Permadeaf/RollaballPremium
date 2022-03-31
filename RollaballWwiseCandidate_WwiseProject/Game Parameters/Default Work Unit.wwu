@@ -21,7 +21,18 @@
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>
-				<GameParameter Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}"/>
+				<GameParameter Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="15"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Angular_Speed" ID="{C17E3F57-7556-4895-A24C-30B3315CF2AF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="15"/>
+						<Property Name="Max" Type="Real64" Value="15"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

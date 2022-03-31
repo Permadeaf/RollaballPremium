@@ -265,30 +265,6 @@
 										<Value>-4</Value>
 									</ValueList>
 									<RTPCList>
-										<RTPC Name="" ID="{336C0301-61C5-49DF-AA6C-753A8178BBC6}" ShortID="397071175">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{60360DF8-73C7-49DE-A693-205294C62BC8}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-0</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
 										<RTPC Name="" ID="{923CCE8B-6FB1-4E04-9D6F-645F65E8DB53}" ShortID="534652906">
 											<ReferenceList>
 												<Reference Name="ControlInput">
@@ -327,7 +303,7 @@
 										<RTPC Name="" ID="{2B1DEEAA-8166-4E57-A9AE-DA71D13E7319}" ShortID="121847364">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+													<ObjectRef Name="Angular_Speed" ID="{C17E3F57-7556-4895-A24C-30B3315CF2AF}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{0C4B2C08-AFEB-4D08-BF70-25AD265869C9}">
@@ -350,6 +326,30 @@
 													<Point>
 														<XPos>15</XPos>
 														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{8EC197C7-5435-449E-8107-5CDAA53B066A}" ShortID="937159579">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{EF6FA490-75FE-40DA-A857-A675FA052942}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
+														<YPos>3</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1253,7 +1253,7 @@
 										<RTPC Name="" ID="{1289299E-31FF-491C-B47E-CB8FE8496256}" ShortID="59589466">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{EAF35E67-8326-453E-878B-B4F52BD511C1}">
@@ -1267,7 +1267,12 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>14.999</XPos>
+														<YPos>548</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1276,27 +1281,42 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
 									<RTPCList>
-										<RTPC Name="" ID="{75DB7A2C-C519-456C-AE4B-05493D8102E7}" ShortID="784300732">
+										<RTPC Name="" ID="{4C699714-0F54-4440-8958-24B966CC969C}" ShortID="447109489">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+													<ObjectRef Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{5AE491A6-50FB-476D-BB4C-F17A34F8A226}">
+											<Curve Name="" ID="{368C9002-DA85-47E4-BC76-848FE2DD1679}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-0.04049</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>15</XPos>
+														<XPos>0.51</XPos>
 														<YPos>0</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0.72749</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-200</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1315,11 +1335,18 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0.20438</YPos>
+														<YPos>-200</YPos>
 														<Flags>5</Flags>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>0.001</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>15</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -1380,6 +1407,11 @@
 								<Sound Name="WoodBallSkidGlassRevision" ID="{C6B19869-31F4-415B-82BC-3D25D644F364}" ShortID="665959304">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1413,6 +1445,11 @@
 								<Sound Name="WoodBallSkidLaminate" ID="{AD977B22-C589-401D-8A88-E80CA5A8AC66}" ShortID="992942568">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1526,6 +1563,13 @@
 					<ObjectLists/>
 				</ActorMixer>
 				<ActorMixer Name="Ambience" ID="{914BC89D-C8AD-42CF-BF1B-D9FE05F1A74E}" ShortID="160288727">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>

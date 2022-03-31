@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2879569500">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1395142110">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="513363627">
+		<SoundBank Id="2858921253" Language="SFX" Hash="1797285593">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
@@ -129,19 +129,36 @@
 							<ShortName>Ball Roll Wood on Wood.WAV</ShortName>
 							<Path>SFX\Ball Roll Wood on Wood_D79FB2B7.wem</Path>
 						</File>
+						<File Id="60985595" Language="SFX">
+							<ShortName>WoodBallSkidConcrete.wav</ShortName>
+							<Path>SFX\WoodBallSkidConcrete_B3935A13.wem</Path>
+						</File>
 						<File Id="97892574" Language="SFX">
 							<ShortName>Ball Roll Wood Glass.wav</ShortName>
 							<Path>SFX\Ball Roll Wood Glass_D79FB2B7.wem</Path>
+						</File>
+						<File Id="150869835" Language="SFX">
+							<ShortName>WoodBallSkidLaminate.wav</ShortName>
+							<Path>SFX\WoodBallSkidLaminate_C142FA36.wem</Path>
 						</File>
 						<File Id="429231965" Language="SFX">
 							<ShortName>Ball Roll Wood on Concrete.wav</ShortName>
 							<Path>SFX\Ball Roll Wood on Concrete_D79FB2B7.wem</Path>
 						</File>
+						<File Id="668769794" Language="SFX">
+							<ShortName>WoodBallSkidWood.wav</ShortName>
+							<Path>SFX\WoodBallSkidWood_91E99947.wem</Path>
+						</File>
 						<File Id="717800367" Language="SFX">
 							<ShortName>RollSound.wav</ShortName>
 							<Path>SFX\RollSound_64491B21.wem</Path>
 						</File>
+						<File Id="837945567" Language="SFX">
+							<ShortName>WoodBallSkidGlassRevision.wav</ShortName>
+							<Path>SFX\WoodBallSkidGlassRevision_1DAE4DF3.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}">
 							<Media>
@@ -161,6 +178,26 @@
 						<SwitchContainer SwitchValue="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}">
 							<Media>
 								<File Id="97892574"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D1A5C924-DCFF-4596-B58A-58D5BAFED257}">
+							<Media>
+								<File Id="60985595"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}">
+							<Media>
+								<File Id="668769794"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C4970D97-501F-44D9-B420-D1BCB2ECD8FD}">
+							<Media>
+								<File Id="150869835"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BEC097D5-772A-4F24-8AE4-61062A2E67CB}">
+							<Media>
+								<File Id="837945567"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -194,6 +231,8 @@
 				<GameParameter Id="805906735" Name="Vertical_Speed" ObjectPath="\Game Parameters\Default Work Unit\Vertical_Speed"/>
 				<GameParameter Id="1062779386" Name="Player_Speed" ObjectPath="\Game Parameters\Default Work Unit\Player_Speed"/>
 				<GameParameter Id="2043068518" Name="Distance_To_Ground" ObjectPath="\Game Parameters\Default Work Unit\Distance_To_Ground"/>
+				<GameParameter Id="2581107858" Name="Skid_Factor" ObjectPath="\Game Parameters\Default Work Unit\Skid_Factor"/>
+				<GameParameter Id="3041061349" Name="Angular_Speed" ObjectPath="\Game Parameters\Default Work Unit\Angular_Speed"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="3964766495" Name="Floor_Material" ObjectPath="\Switches\Default Work Unit\Floor_Material" GUID="{CBD79FF2-6B5A-4A09-BE1A-1CC721A31F7E}">

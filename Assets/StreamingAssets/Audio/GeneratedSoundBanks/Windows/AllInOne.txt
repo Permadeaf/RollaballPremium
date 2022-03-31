@@ -19,12 +19,16 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	805906735	Vertical_Speed			\Default Work Unit\Vertical_Speed	
 	1062779386	Player_Speed			\Default Work Unit\Player_Speed	
 	2043068518	Distance_To_Ground			\Default Work Unit\Distance_To_Ground	
+	2581107858	Skid_Factor			\Default Work Unit\Skid_Factor	
+	3041061349	Angular_Speed			\Default Work Unit\Angular_Speed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	43904164	Ball Roll Wood	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Ball Roll Wood on Wood_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Roll\Ball Roll Wood		6060372
 	43967976	WindySounds	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\FrontYardWindyDay(3)_379CED36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\WindySounds		10094212
+	60985595	WoodBallSkidConcrete	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\WoodBallSkidConcrete_B3935A13.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Skid\WoodBallSkidConcrete		3453052
 	97892574	Ball Roll Glass	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Ball Roll Wood Glass_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Roll\Ball Roll Glass		5348636
 	135709545	Collision	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Hit Wall Wood_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Collision		18848
+	150869835	WoodBallSkidLaminate	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\WoodBallSkidLaminate_C142FA36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Skid\WoodBallSkidLaminate		2416304
 	173535225	Impact Wood on Wood(2)	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood on Wood(2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Wood\Impact Wood on Wood(2)		65612
 	213958448	Impact Wood Ball on Concrete Inside(3)	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood Ball on Concrete Inside(3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Concrete\Impact Wood Ball on Concrete Inside(3)		28868
 	312692166	Impact Wood on Glass	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood on Glass_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Glass\Impact Wood on Glass		103776
@@ -37,8 +41,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	624055108	Impact Wood Ball on Concrete Inside(2)	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood Ball on Concrete Inside(2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Concrete\Impact Wood Ball on Concrete Inside(2)		35560
 	624853772	Impact Wood on Glass(3)	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood on Glass(3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Glass\Impact Wood on Glass(3)		56100
 	666569894	Impact Wood on Wood(3)	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood on Wood(3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Wood\Impact Wood on Wood(3)		65772
+	668769794	WoodBallSkidWood	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\WoodBallSkidWood_91E99947.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Skid\WoodBallSkidWood		2521688
 	670321966	Impact Wood on Glass(4)	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood on Glass(4)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Glass\Impact Wood on Glass(4)		92108
 	717800367	Ball Roll Laminate	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\RollSound_64491B21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Roll\Ball Roll Laminate		1368504
+	837945567	WoodBallSkidGlassRevision	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\WoodBallSkidGlassRevision_1DAE4DF3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Skid\WoodBallSkidGlassRevision		7110384
 	892614448	Impact Wood on Laminate	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood on Laminate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Laminate\Impact Wood on Laminate		19236
 	948656842	Impact Wood on Wood	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Impact Wood on Wood_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Impact\Impact Wood\Impact Wood on Wood		65492
 	979774808	PickupSound	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Windows\SFX\Door maybe_0E4EC9A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PickupSound		78768

@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
 
     Vector3 initialPosition;
 
+
+    bool isBraking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +58,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnBrake(InputValue brakeValue)
+    {
+        if (brakeValue.isPressed)
+        {
+            isBraking = true;
+            rb.angularVelocity = Vector3.zero;
+        }
+        else
+        {
+            isBraking = false;
+        }
+    }
+
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
@@ -69,6 +85,11 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
 
         rb.AddForce(movement * speed);
+
+        if (isBraking)
+        {
+            rb.angularVelocity = Vector3.zero;
+        }
     }
 
     public void ResetPosition()

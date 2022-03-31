@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 7809841494303609846}
   - component: {fileID: 7809841494303609844}
   - component: {fileID: 7809841494303609835}
+  - component: {fileID: 3810467346402094255}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -168,6 +169,7 @@ MonoBehaviour:
   countText: {fileID: 0}
   winTextObject: {fileID: 0}
   jumpCheck: {fileID: 7809841494303609845}
+  canJump: 1
 --- !u!114 &7809841494303609845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,3 +284,16 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fc01ba5826e6b894d88dc857400a62ef, type: 2}
   myRigidbody: {fileID: 7809841494303609848}
+--- !u!114 &3810467346402094255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7809841494303609849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4bf2f808a1d1044989eb8fefebe1c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBody: {fileID: 7809841494303609848}

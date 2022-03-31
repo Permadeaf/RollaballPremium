@@ -20,7 +20,7 @@ public class PostBallPlayEvent : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.LogWarning("Hit: " + other.gameObject.name + " Velocity: " + other.relativeVelocity + " Collision Points: " + other.contactCount);
+        //Debug.LogWarning("Hit: " + other.gameObject.name + " Velocity: " + other.relativeVelocity + " Collision Points: " + other.contactCount);
         var soundMat = other.gameObject.GetComponent<SoundMaterial>();
         if (soundMat != null)
         {

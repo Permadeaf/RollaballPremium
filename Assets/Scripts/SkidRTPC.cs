@@ -36,7 +36,7 @@ public class SkidRTPC : MonoBehaviour
         AngularSpeed.SetGlobalValue(angularDist.magnitude);
 
         Debug.LogWarning("Skid: " + Mathf.Abs(playerSpeed.magnitude - angularDist.magnitude).ToString("F2"));
-        Debug.LogWarning("Spin: " + Mathf.Abs(angularDist.magnitude).ToString("F2"));
+        //Debug.LogWarning("Spin: " + Mathf.Abs(angularDist.magnitude).ToString("F2"));
 
     }
 

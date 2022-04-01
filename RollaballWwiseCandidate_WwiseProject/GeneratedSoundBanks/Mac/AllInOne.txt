@@ -22,6 +22,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2581107858	Skid_Factor			\Default Work Unit\Skid_Factor	
 	3041061349	Angular_Speed			\Default Work Unit\Angular_Speed	
 
+Effect plug-ins	ID	Name	Type				Notes
+	1053905488	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	43904164	Ball Roll Wood	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Mac\SFX\Ball Roll Wood on Wood_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Ball Roll\Ball Roll Wood		6060372
 	43967976	WindySounds	F:\Unity Projects\RollaballWwiseCandidate\RollaballWwiseCandidate_WwiseProject\.cache\Mac\SFX\FrontYardWindyDay(3)_379CED36.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\WindySounds		10094212

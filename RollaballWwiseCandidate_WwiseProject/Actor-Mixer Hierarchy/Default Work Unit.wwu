@@ -1268,7 +1268,7 @@
 													</Point>
 													<Point>
 														<XPos>14.999</XPos>
-														<YPos>548</YPos>
+														<YPos>33</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
@@ -1340,14 +1340,39 @@
 														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>0.001</XPos>
+														<XPos>0.00133333333333333</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>20</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{10DF1C9F-1030-4191-AFF8-4504CA2DB278}" ShortID="430227763">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Angular_Speed" ID="{C17E3F57-7556-4895-A24C-30B3315CF2AF}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6ED5C517-4FAE-430D-B92F-888B973B3F37}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0.08233</YPos>
+														<Flags>5</Flags>
 														<SegmentShape>Log3</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>15</XPos>
-														<YPos>0</YPos>
+														<YPos>-12.20667</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1445,15 +1470,29 @@
 								<Sound Name="WoodBallSkidLaminate" ID="{AD977B22-C589-401D-8A88-E80CA5A8AC66}" ShortID="992942568">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{F11FCB2F-19D0-45F8-9CEB-687F9A849DD1}" ShortID="1053905488" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FrequencyBand2" Type="Real32" Value="376"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="907"/>
+														<Property Name="GainBand2" Type="Real32" Value="-3"/>
+														<Property Name="GainBand3" Type="Real32" Value="2.5"/>
+														<Property Name="OnOffBand1" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>

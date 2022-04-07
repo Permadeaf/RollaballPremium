@@ -170,6 +170,7 @@ MonoBehaviour:
   winTextObject: {fileID: 0}
   jumpCheck: {fileID: 7809841494303609845}
   canJump: 1
+  canMove: 1
 --- !u!114 &7809841494303609845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,4 +297,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bf2f808a1d1044989eb8fefebe1c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkidFactor:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 308341646014fc347b7a0122c2c1e221, type: 2}
+  AngularSpeed:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 199c36ab9251a9846b7786450a7ed2f2, type: 2}
   playerBody: {fileID: 7809841494303609848}

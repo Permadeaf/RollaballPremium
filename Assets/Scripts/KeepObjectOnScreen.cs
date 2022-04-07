@@ -31,7 +31,7 @@ public class KeepObjectOnScreen : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         CalculateSpeed();
     }
@@ -39,6 +39,7 @@ public class KeepObjectOnScreen : MonoBehaviour
     void CalculateSpeed()
     {
         var viewPoint = cameraLooking.WorldToViewportPoint(objectToTrack.transform.position, Camera.MonoOrStereoscopicEye.Mono);
+        //Debug.LogWarning("ViewPort: " + viewPoint);
 
         var xDist = viewPoint.x < .5 ? xBorder.x - viewPoint.x : viewPoint.x - xBorder.y;
         var yDist = viewPoint.y < .5 ? yBorder.x - viewPoint.y : viewPoint.y - xBorder.y;
@@ -49,9 +50,11 @@ public class KeepObjectOnScreen : MonoBehaviour
 
         var ySpeed = speedCurve.Evaluate(yDist);
         ySpeed *= viewPoint.y < .5 ? 1 : -1;
+        //ySpeed *= viewPoint.z < 0 ? 1 : -1;
 
         Vector3 speedVector = new Vector3(xSpeed, 0, ySpeed).normalized;
 
-        transform.position += -maxSpeed * speedVector * Time.deltaTime;
+        Vector3 offset = -maxSpeed * speedVector * Time.fixedDeltaTime;
+        transform.position = Vector3.Lerp(transform.position, transform.position + offset, .25f);
     }
 }

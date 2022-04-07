@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ef7c7f2417bb840afe1564589a670d, type: 3}
+  m_Name: A4A1C299-E737-4464-819A-3679C1C783D4
+  m_EditorClassIdentifier: 
+  objectName: Distance_to_Danger
+  id: 637751038
+  guid: A4A1C299-E737-4464-819A-3679C1C783D4

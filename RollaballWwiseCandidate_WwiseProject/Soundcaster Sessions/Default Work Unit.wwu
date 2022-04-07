@@ -18,11 +18,23 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Music" ID="{41479E41-2E18-42D9-B2FF-A552766818BB}" WorkUnitID="{417F65BB-9359-47BF-B873-04F894E679F2}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Impact" ID="{4F3CC8DB-B23C-4C9C-BF6E-3B2DB88C232A}" WorkUnitID="{157CBA60-C77D-423C-8413-B13E62D08FCA}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}"/>
+							<Value>-96.3</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}"/>
 							<Value>15.0859291084855</Value>

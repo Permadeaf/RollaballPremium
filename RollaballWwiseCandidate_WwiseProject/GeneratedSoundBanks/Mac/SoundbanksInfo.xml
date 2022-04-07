@@ -11,12 +11,16 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="355457484">
+		<SoundBank Id="1355168291" Language="SFX" Hash="288763090">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="637751038" Name="Distance_to_Danger" ObjectPath="\Game Parameters\Default Work Unit\Distance_to_Danger"/>
+				<GameParameter Id="3583298971" Name="Kick_RTPC" ObjectPath="\Game Parameters\Music Routings\Kick_RTPC"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="1452987046">
+		<SoundBank Id="2858921253" Language="SFX" Hash="298502078">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
@@ -25,67 +29,67 @@
 					<IncludedMemoryFiles>
 						<File Id="173535225" Language="SFX">
 							<ShortName>Impact Wood on Wood(2).wav</ShortName>
-							<Path>SFX\Impact Wood on Wood(2)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Wood(2)_470FD545.wem</Path>
 						</File>
 						<File Id="213958448" Language="SFX">
 							<ShortName>Impact Wood Ball on Concrete Inside(3).wav</ShortName>
-							<Path>SFX\Impact Wood Ball on Concrete Inside(3)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood Ball on Concrete Inside(3)_470FD545.wem</Path>
 						</File>
 						<File Id="312692166" Language="SFX">
 							<ShortName>Impact Wood on Glass.wav</ShortName>
-							<Path>SFX\Impact Wood on Glass_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Glass_470FD545.wem</Path>
 						</File>
 						<File Id="429327741" Language="SFX">
 							<ShortName>Impact Wood on Glass(2).wav</ShortName>
-							<Path>SFX\Impact Wood on Glass(2)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Glass(2)_470FD545.wem</Path>
 						</File>
 						<File Id="449003089" Language="SFX">
 							<ShortName>Impact Wood on Laminate(4).wav</ShortName>
-							<Path>SFX\Impact Wood on Laminate(4)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Laminate(4)_470FD545.wem</Path>
 						</File>
 						<File Id="541952417" Language="SFX">
 							<ShortName>Impact Wood on Wood(4).wav</ShortName>
-							<Path>SFX\Impact Wood on Wood(4)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Wood(4)_470FD545.wem</Path>
 						</File>
 						<File Id="564327232" Language="SFX">
 							<ShortName>Impact Wood on Laminate(3).wav</ShortName>
-							<Path>SFX\Impact Wood on Laminate(3)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Laminate(3)_470FD545.wem</Path>
 						</File>
 						<File Id="623776434" Language="SFX">
 							<ShortName>Impact Wood Ball on Concrete Inside.wav</ShortName>
-							<Path>SFX\Impact Wood Ball on Concrete Inside_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood Ball on Concrete Inside_470FD545.wem</Path>
 						</File>
 						<File Id="624055108" Language="SFX">
 							<ShortName>Impact Wood Ball on Concrete Inside(2).wav</ShortName>
-							<Path>SFX\Impact Wood Ball on Concrete Inside(2)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood Ball on Concrete Inside(2)_470FD545.wem</Path>
 						</File>
 						<File Id="624853772" Language="SFX">
 							<ShortName>Impact Wood on Glass(3).wav</ShortName>
-							<Path>SFX\Impact Wood on Glass(3)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Glass(3)_470FD545.wem</Path>
 						</File>
 						<File Id="666569894" Language="SFX">
 							<ShortName>Impact Wood on Wood(3).wav</ShortName>
-							<Path>SFX\Impact Wood on Wood(3)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Wood(3)_470FD545.wem</Path>
 						</File>
 						<File Id="670321966" Language="SFX">
 							<ShortName>Impact Wood on Glass(4).wav</ShortName>
-							<Path>SFX\Impact Wood on Glass(4)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Glass(4)_470FD545.wem</Path>
 						</File>
 						<File Id="892614448" Language="SFX">
 							<ShortName>Impact Wood on Laminate.wav</ShortName>
-							<Path>SFX\Impact Wood on Laminate_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Laminate_470FD545.wem</Path>
 						</File>
 						<File Id="948656842" Language="SFX">
 							<ShortName>Impact Wood on Wood.wav</ShortName>
-							<Path>SFX\Impact Wood on Wood_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Wood_470FD545.wem</Path>
 						</File>
 						<File Id="1045395754" Language="SFX">
 							<ShortName>Impact Wood Ball on Concrete Inside(4).wav</ShortName>
-							<Path>SFX\Impact Wood Ball on Concrete Inside(4)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood Ball on Concrete Inside(4)_470FD545.wem</Path>
 						</File>
 						<File Id="1059343500" Language="SFX">
 							<ShortName>Impact Wood on Laminate(2).wav</ShortName>
-							<Path>SFX\Impact Wood on Laminate(2)_10C4C929.wem</Path>
+							<Path>SFX\Impact Wood on Laminate(2)_470FD545.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -127,35 +131,35 @@
 					<IncludedMemoryFiles>
 						<File Id="43904164" Language="SFX">
 							<ShortName>Ball Roll Wood on Wood.WAV</ShortName>
-							<Path>SFX\Ball Roll Wood on Wood_D79FB2B7.wem</Path>
+							<Path>SFX\Ball Roll Wood on Wood_3B878223.wem</Path>
 						</File>
 						<File Id="60985595" Language="SFX">
 							<ShortName>WoodBallSkidConcrete.wav</ShortName>
-							<Path>SFX\WoodBallSkidConcrete_B3935A13.wem</Path>
+							<Path>SFX\WoodBallSkidConcrete_1DA5EB9F.wem</Path>
 						</File>
 						<File Id="97892574" Language="SFX">
 							<ShortName>Ball Roll Wood Glass.wav</ShortName>
-							<Path>SFX\Ball Roll Wood Glass_D79FB2B7.wem</Path>
+							<Path>SFX\Ball Roll Wood Glass_3B878223.wem</Path>
 						</File>
 						<File Id="150869835" Language="SFX">
 							<ShortName>WoodBallSkidLaminate.wav</ShortName>
-							<Path>SFX\WoodBallSkidLaminate_C142FA36.wem</Path>
+							<Path>SFX\WoodBallSkidLaminate_51B13D22.wem</Path>
 						</File>
 						<File Id="429231965" Language="SFX">
 							<ShortName>Ball Roll Wood on Concrete.wav</ShortName>
-							<Path>SFX\Ball Roll Wood on Concrete_D79FB2B7.wem</Path>
+							<Path>SFX\Ball Roll Wood on Concrete_3B878223.wem</Path>
 						</File>
 						<File Id="668769794" Language="SFX">
 							<ShortName>WoodBallSkidWood.wav</ShortName>
-							<Path>SFX\WoodBallSkidWood_91E99947.wem</Path>
+							<Path>SFX\WoodBallSkidWood_1EB6ACBB.wem</Path>
 						</File>
 						<File Id="717800367" Language="SFX">
 							<ShortName>RollSound.wav</ShortName>
-							<Path>SFX\RollSound_64491B21.wem</Path>
+							<Path>SFX\RollSound_2085A0BD.wem</Path>
 						</File>
 						<File Id="837945567" Language="SFX">
 							<ShortName>WoodBallSkidGlassRevision.wav</ShortName>
-							<Path>SFX\WoodBallSkidGlassRevision_1DAE4DF3.wem</Path>
+							<Path>SFX\WoodBallSkidGlassRevision_2C9D1E77.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{56E22059-1FB8-4A54-ADD6-6827DDF8FF33}</DefaultSwitchValue>
@@ -202,11 +206,27 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="154626451" Language="SFX">
+							<ShortName>Sparkles_120bpm4-4_L128M_P0M.wav</ShortName>
+							<Path>SFX\Sparkles_120bpm4-4_L128M_P0M_3B878223.wem</Path>
+						</File>
+						<File Id="917100087" Language="SFX">
+							<ShortName>Kick_120bpm_4-4_L1M_P0M.wav</ShortName>
+							<Path>SFX\Kick_120bpm_4-4_L1M_P0M_3B878223.wem</Path>
+						</File>
+						<File Id="1049404315" Language="SFX">
+							<ShortName>Drone_120bpm4-4_L128M_P8M.wav</ShortName>
+							<Path>SFX\Drone_120bpm4-4_L128M_P8M_3B878223.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3784267794" Name="PickupSound" ObjectPath="\Events\Default Work Unit\PickupSound" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.446171" DurationMax="0.446171">
 					<IncludedMemoryFiles>
 						<File Id="979774808" Language="SFX">
 							<ShortName>Door maybe.wav</ShortName>
-							<Path>SFX\Door maybe_0E4EC9A5.wem</Path>
+							<Path>SFX\Door maybe_A45BA259.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -214,7 +234,7 @@
 					<IncludedMemoryFiles>
 						<File Id="135709545" Language="SFX">
 							<ShortName>Hit Wall Wood.wav</ShortName>
-							<Path>SFX\Hit Wall Wood_10C4C929.wem</Path>
+							<Path>SFX\Hit Wall Wood_470FD545.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -222,7 +242,7 @@
 					<IncludedMemoryFiles>
 						<File Id="43967976" Language="SFX">
 							<ShortName>FrontYardWindyDay(3).wav</ShortName>
-							<Path>SFX\FrontYardWindyDay(3)_379CED36.wem</Path>
+							<Path>SFX\FrontYardWindyDay(3)_7D0981A2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

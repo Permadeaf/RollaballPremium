@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{417F65BB-9359-47BF-B873-04F894E679F2}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Music" ID="{417F65BB-9359-47BF-B873-04F894E679F2}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Music" ID="{41479E41-2E18-42D9-B2FF-A552766818BB}">
+					<ChildrenList>
+						<Action Name="" ID="{2954ECA3-9CEA-4B74-AABB-96BA741859BC}" ShortID="1042603393">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Etherial_Drone" ID="{3BDB47C4-5D93-48A4-9572-BA639591FF0A}" WorkUnitID="{C6A732E9-8984-43B7-91F3-A3451964D53E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

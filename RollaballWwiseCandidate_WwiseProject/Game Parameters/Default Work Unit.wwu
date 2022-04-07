@@ -33,6 +33,11 @@
 						<Property Name="Max" Type="Real64" Value="15"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

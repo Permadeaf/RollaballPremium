@@ -12,6 +12,121 @@
 							<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{B5C7A9D9-58FC-4140-8A06-12324C7585CB}">
+							<ChildrenList>
+								<Bus Name="Kick" ID="{17B88168-9E4D-431E-924E-377954D3B592}">
+									<PropertyList>
+										<Property Name="BusChannelConfig" Type="int32">
+											<ValueList>
+												<Value>12546</Value>
+											</ValueList>
+										</Property>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{59F162D2-C8ED-42EF-B604-1ADC1B74334C}" ShortID="241440997">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{1B691A73-3284-4D02-AECE-3587155DB55A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>24.45652</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Meter (Custom)" ID="{8C0B3F8F-F4DD-46B5-AEF9-B3676FD0C426}" ShortID="1033728705" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+													<PropertyList>
+														<Property Name="ApplyDownstreamVolume" Type="bool" Value="True"/>
+														<Property Name="Min" Type="Real32" Value="-96.3"/>
+														<Property Name="ReleaseTime" Type="Real32" Value="0.05"/>
+													</PropertyList>
+													<PluginData>
+	<GameParameter Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}"/>
+</PluginData>
+												</Effect>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="Drone" ID="{74730E19-182A-4DCD-9ED3-2450919462EA}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{53221170-C61E-4D7C-A6ED-F2CBF02B55DD}" ShortID="872081432">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}" WorkUnitID="{97C89EF2-CD29-42D5-8CF5-971BE0E5955B}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{BDD966C6-B3EA-4B3E-8853-4C15AB37F7B0}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-96.3</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-29.95438</XPos>
+																<YPos>0.20931</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>-12.24505</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ObjectLists/>
+								</Bus>
+							</ChildrenList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="SFX" ID="{5C226350-AE98-4135-AB9C-213DDF139EFA}">
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

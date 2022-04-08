@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="AllInOne" ID="{10DFA7CF-D858-4F3A-939E-E61894D55C60}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Sparkles_Play" ID="{85BE25FE-A752-4000-8442-6C1580E70DFE}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Music" ID="{41479E41-2E18-42D9-B2FF-A552766818BB}" WorkUnitID="{417F65BB-9359-47BF-B873-04F894E679F2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ball_Play" ID="{C59B8643-A27C-4301-BC9D-B9432A061DBE}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Ball_Impact" ID="{1A01628C-E747-441D-B0C4-9FF8A4129B8F}" WorkUnitID="{B2979ED8-F65A-49BF-8FCF-DDFCF91B34D1}" Origin="Manual" Filter="7"/>

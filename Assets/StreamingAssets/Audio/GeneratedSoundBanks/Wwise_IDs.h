@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID BALL_PLAY = 1812213047U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PICKUPSOUND = 3784267794U;
+        static const AkUniqueID SPARKLES_PLAY = 1691357261U;
         static const AkUniqueID WALLCOLLISION = 1835233263U;
         static const AkUniqueID WINDYAMBIENCEPLAY = 1695464326U;
     } // namespace EVENTS

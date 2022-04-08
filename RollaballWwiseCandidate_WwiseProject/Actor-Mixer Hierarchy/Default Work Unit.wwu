@@ -1657,6 +1657,42 @@
 								<ActiveSource Name="FrontYardWindyDay(3)" ID="{4882F4AA-83BD-445D-82FA-4241A746E1BA}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Sparkles" ID="{1670AA60-E494-4110-9BD8-9F873EFB2BE4}" ShortID="60949805">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{293C3FFC-8F84-4B83-9CA4-37C89DFE645B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E42930CF-4D21-4860-A380-DA507F580225}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sparkles_120bpm4-4_L128M_P0M" ID="{D7389211-0F9F-457D-AFD1-7E781D6B7DD3}">
+									<Language>SFX</Language>
+									<AudioFile>Sparkles_120bpm4-4_L128M_P0M.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="154626451"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Sparkles_120bpm4-4_L128M_P0M" ID="{D7389211-0F9F-457D-AFD1-7E781D6B7DD3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

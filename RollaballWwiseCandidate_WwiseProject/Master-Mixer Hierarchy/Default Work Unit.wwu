@@ -14,6 +14,42 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{B5C7A9D9-58FC-4140-8A06-12324C7585CB}">
+							<PropertyList>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{52605B22-0C1F-4D3E-842B-952BDB5E1E40}" ShortID="663457889">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D6CB894C-63E7-4C0B-B7B1-660EA7B8B8E8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0.20439</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>13</XPos>
+														<YPos>-6</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-6</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Kick" ID="{17B88168-9E4D-431E-924E-377954D3B592}">
 									<PropertyList>
@@ -41,13 +77,49 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>24.45652</XPos>
+																<XPos>13</XPos>
 																<YPos>-200</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
 																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>49</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{5CD2DA2B-7E77-4A8B-B84C-FA19C84F2395}" ShortID="30388712">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{A3405404-B34F-45DE-B073-644A067AAB84}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>8</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>99.999</XPos>
+																<YPos>100</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-100</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -96,7 +168,7 @@
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>-29.95438</XPos>
+																<XPos>-26.511</XPos>
 																<YPos>0.20931</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Log1</SegmentShape>
@@ -118,6 +190,11 @@
 											</RTPCList>
 										</Property>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>

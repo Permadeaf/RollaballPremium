@@ -29,7 +29,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}"/>
-							<Value>0</Value>
+							<Value>15</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}"/>

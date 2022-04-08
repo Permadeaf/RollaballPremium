@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 7809841494303609844}
   - component: {fileID: 7809841494303609835}
   - component: {fileID: 3810467346402094255}
+  - component: {fileID: 1435811886081726838}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -306,3 +307,24 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 199c36ab9251a9846b7786450a7ed2f2, type: 2}
   playerBody: {fileID: 7809841494303609848}
+--- !u!114 &1435811886081726838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7809841494303609849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d0584434480b642863b29b70b9d682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceToDangerPostRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b95ef633ac274b446aef8cb897256821, type: 2}
+  Player: {fileID: 7809841494303609849}
+  DangerObject: {fileID: 0}
+  useUpdatedMethod: 1
+  bounceSetter: {fileID: 0}
+  dist: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641305, b: 0.57481563, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657892, g: 0.49641353, b: 0.5748163, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -258,25 +258,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7809841494303609849, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}
   m_PrefabInstance: {fileID: 7809841494061505723}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &297193298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297193282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11d0584434480b642863b29b70b9d682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DistanceToDangerPostRTPC:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b95ef633ac274b446aef8cb897256821, type: 2}
-  Player: {fileID: 297193282}
-  DangerObject: {fileID: 1179597868}
-  dist: 0
 --- !u!1001 &350765255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3412,6 +3393,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a5ffc30d8441684d9979f9fdbf6b18f, type: 3}
+--- !u!1001 &4808856051536176821
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872843, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808856052286872844, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
+      propertyPath: m_Name
+      value: Enemy Sphere
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 197856d6f9ee3a14bb5fd344d7b694ac, type: 3}
 --- !u!1001 &7809841494061505723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3419,6 +3457,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1435811886081726838, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}
+      propertyPath: DangerObject
+      value: 
+      objectReference: {fileID: 1179597868}
     - target: {fileID: 3810467346402094255, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}
       propertyPath: SkidFactor.WwiseObjectReference
       value: 

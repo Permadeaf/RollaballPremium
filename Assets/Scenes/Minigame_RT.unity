@@ -2053,6 +2053,7 @@ GameObject:
   - component: {fileID: 987520034}
   - component: {fileID: 987520037}
   - component: {fileID: 987520036}
+  - component: {fileID: 987520038}
   m_Layer: 0
   m_Name: Wwise Event Post
   m_TagString: Untagged
@@ -2116,7 +2117,7 @@ MonoBehaviour:
   - Flags:
       value: 256
     FunctionName: PushActions
-    GameObject: {fileID: 1179597868}
+    GameObject: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
@@ -2145,6 +2146,22 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &987520038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987520033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902b02dcb4329024096316a9f576b942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToTrack: {fileID: 987520036}
+  flags:
+    value: 256
+  functionName: PushActions
 --- !u!1001 &1061963094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2523,6 +2540,7 @@ GameObject:
   - component: {fileID: 1179597871}
   - component: {fileID: 1179597870}
   - component: {fileID: 1179597869}
+  - component: {fileID: 1179597875}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2648,6 +2666,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1179597875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179597868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c2739fe63dd6043a5466a130f4c47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1403898235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 478835118246582019, guid: e67ffe6f143544b43a30343e9a4ed20e, type: 3}
@@ -3461,6 +3491,10 @@ PrefabInstance:
       propertyPath: DangerObject
       value: 
       objectReference: {fileID: 1179597868}
+    - target: {fileID: 1435811886081726838, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}
+      propertyPath: bounceSetter
+      value: 
+      objectReference: {fileID: 987520038}
     - target: {fileID: 3810467346402094255, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}
       propertyPath: SkidFactor.WwiseObjectReference
       value: 

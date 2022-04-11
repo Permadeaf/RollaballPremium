@@ -63,7 +63,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Collision" ID="{D8E91411-9A8E-44F6-BB70-4F363E994154}" ShortID="1045450427">
+						<Sound Name="Wall Collision" ID="{D8E91411-9A8E-44F6-BB70-4F363E994154}" ShortID="1045450427">
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<RTPCList>
@@ -94,6 +94,17 @@
 									</RTPCList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{13FAB63A-C42F-4B19-83CE-7E2732189D72}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="70.5"/>
+													<Property Name="Min" Type="Real64" Value="-66.8"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 									<RTPCList>
 										<RTPC Name="" ID="{837705D2-9440-4C8E-BCEF-58EC295150F0}" ShortID="510384713">
 											<ReferenceList>
@@ -129,7 +140,7 @@
 										<RTPC Name="" ID="{9745AFEA-6DD4-4D57-A305-F4243D4F0AE0}" ShortID="291492440">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+													<ObjectRef Name="Vertical_Speed" ID="{004B4055-2E22-4CF8-9174-344D67B64D96}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{0CE65728-D964-4D18-8B37-250FD345FF2A}">

@@ -59,11 +59,16 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID DANGERDRONEMIX = 220422752U;
         static const AkUniqueID DRONE = 2739838641U;
+        static const AkUniqueID ELECTRICDRONE = 683180146U;
+        static const AkUniqueID GRATINGDRONES = 790654202U;
         static const AkUniqueID KICK = 2181839183U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SCARYDRONE = 3196148943U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID SINGINGBOWL = 3088977532U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

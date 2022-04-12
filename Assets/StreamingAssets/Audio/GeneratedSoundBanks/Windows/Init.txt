@@ -3,9 +3,14 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3583298971	Kick_RTPC			\Music Routings\Kick_RTPC	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	220422752	DangerDroneMix			\Default Work Unit\Master Audio Bus\Music\DangerDroneMix	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	683180146	ElectricDrone			\Default Work Unit\Master Audio Bus\Music\DangerDroneMix\GratingDrones\ElectricDrone	
+	790654202	GratingDrones			\Default Work Unit\Master Audio Bus\Music\DangerDroneMix\GratingDrones	
 	2181839183	Kick			\Default Work Unit\Master Audio Bus\Music\Kick	
 	2739838641	Drone			\Default Work Unit\Master Audio Bus\Music\Drone	
+	3088977532	SingingBowl			\Default Work Unit\Master Audio Bus\Music\DangerDroneMix\SingingBowl	
+	3196148943	ScaryDrone			\Default Work Unit\Master Audio Bus\Music\DangerDroneMix\GratingDrones\ScaryDrone	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 

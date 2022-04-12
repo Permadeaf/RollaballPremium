@@ -15,6 +15,11 @@
 					<ChildrenList>
 						<Bus Name="Music" ID="{B5C7A9D9-58FC-4140-8A06-12324C7585CB}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OutputBusVolume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{52605B22-0C1F-4D3E-842B-952BDB5E1E40}" ShortID="663457889">
@@ -30,9 +35,9 @@
 												<PointList>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0.20439</YPos>
+														<YPos>3</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Log3</SegmentShape>
+														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>13</XPos>
@@ -40,7 +45,7 @@
 														<Flags>0</Flags>
 													</Point>
 													<Point>
-														<XPos>100</XPos>
+														<XPos>25</XPos>
 														<YPos>-12</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -75,6 +80,13 @@
 																<XPos>0</XPos>
 																<YPos>0</YPos>
 																<Flags>5</Flags>
+																<SegmentShape>Exp1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>2</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>13</XPos>
@@ -82,7 +94,7 @@
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>100</XPos>
+																<XPos>25</XPos>
 																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -113,13 +125,8 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>99.999</XPos>
-																<YPos>100</YPos>
-																<Flags>0</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>-100</YPos>
+																<XPos>25</XPos>
+																<YPos>31</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -149,6 +156,9 @@
 								<Bus Name="Drone" ID="{74730E19-182A-4DCD-9ED3-2450919462EA}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{53221170-C61E-4D7C-A6ED-F2CBF02B55DD}" ShortID="872081432">
 													<ReferenceList>
@@ -195,6 +205,292 @@
 											<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 									</ReferenceList>
+									<ObjectLists/>
+								</Bus>
+								<Bus Name="DangerDroneMix" ID="{89F045DB-03EC-4042-9865-F528D14199D0}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusLowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{63954216-8EDC-4988-A2AB-B522A8B51C02}" ShortID="1016442530">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{CE94F75B-0E25-4C88-A97A-3C7FC32F9EC2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>3</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log3</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>11.48148</XPos>
+																<YPos>100</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>25</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList/>
+									<ChildrenList>
+										<Bus Name="SingingBowl" ID="{55FB68A3-3D4F-4183-8A47-161708B8012D}">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{7CF03653-02D4-466D-B472-5198D391FEB1}" ShortID="317735703">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{5E186B45-B686-4C79-91CB-4240B625B0F5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>8.70748</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+														<RTPC Name="" ID="{27A537CD-9F57-4524-9FBE-2E194AE51C6A}" ShortID="806722346">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}" WorkUnitID="{97C89EF2-CD29-42D5-8CF5-971BE0E5955B}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{04BC69D5-CE6A-4C08-97C7-2B0A57F58446}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-96.3</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>-26.511</XPos>
+																		<YPos>0.209309999999959</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>-6.77667</XPos>
+																		<YPos>-12.6549</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-41.10166</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ObjectLists/>
+										</Bus>
+										<Bus Name="GratingDrones" ID="{49E2271E-DC1A-4858-857F-3EC4A27DDA18}">
+											<ChildrenList>
+												<Bus Name="ElectricDrone" ID="{8738DF0A-180B-4D10-A880-BB40D82307FB}">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{241019C9-DA5E-43F5-A711-D6195585A142}" ShortID="451658103">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{7C1C37FA-0B8E-4CE7-8E13-4B1A9D1641F7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log3</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>6.40967</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+																<RTPC Name="" ID="{CE0DDCD4-6CE1-4E52-9B80-119BFAEAC3A9}" ShortID="159952689">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}" WorkUnitID="{97C89EF2-CD29-42D5-8CF5-971BE0E5955B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{96691FE3-AC02-453B-A0B6-9345DE1CB100}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-96.3</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-26.511</XPos>
+																				<YPos>0.209309999999959</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Log1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-12.66167</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ObjectLists/>
+												</Bus>
+												<Bus Name="ScaryDrone" ID="{D7CEB7CE-9931-43CD-BE98-90AB52435524}">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+															<RTPCList>
+																<RTPC Name="" ID="{4645C804-5CBF-47F9-9E54-3A5FEC145405}" ShortID="973224257">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}" WorkUnitID="{97C89EF2-CD29-42D5-8CF5-971BE0E5955B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{76B66C39-94FA-4DE8-BBD0-97DFFBBAB874}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-96.3</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-26.511</XPos>
+																				<YPos>0.209309999999959</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Log1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>-8.73833</XPos>
+																				<YPos>-19.28923</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-19.28924</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+																<RTPC Name="" ID="{8874F177-12F1-4C81-B799-E0410739E3B5}" ShortID="714673732">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}" WorkUnitID="{0DF0D7A1-70C6-4195-B4D2-EBBFD3E91420}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{984A7BDB-1F20-4B93-B500-8C2AD467D3A8}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>2.48379</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>2.38851</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ObjectLists/>
+												</Bus>
+											</ChildrenList>
+											<ObjectLists/>
+										</Bus>
+									</ChildrenList>
 									<ObjectLists/>
 								</Bus>
 							</ChildrenList>

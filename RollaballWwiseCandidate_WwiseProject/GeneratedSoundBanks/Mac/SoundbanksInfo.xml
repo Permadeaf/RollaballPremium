@@ -16,7 +16,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1235257713">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4079861694">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -25,7 +25,7 @@
 				<GameParameter Id="3583298971" Name="Kick_RTPC" ObjectPath="\Game Parameters\Music Routings\Kick_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="2800529154">
+		<SoundBank Id="2858921253" Language="SFX" Hash="745304062">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>
@@ -213,9 +213,13 @@
 				</Event>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Music\Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="154626451" Language="SFX">
-							<ShortName>Sparkles_120bpm4-4_L128M_P0M.wav</ShortName>
-							<Path>SFX\Sparkles_120bpm4-4_L128M_P0M_E3D9B443.wem</Path>
+						<File Id="56314980" Language="SFX">
+							<ShortName>Singing Bowl.wav</ShortName>
+							<Path>SFX\Singing Bowl_E3D9B443.wem</Path>
+						</File>
+						<File Id="335932749" Language="SFX">
+							<ShortName>ScaryDrone120bpm_9L.wav</ShortName>
+							<Path>SFX\ScaryDrone120bpm_9L_E3D9B443.wem</Path>
 						</File>
 						<File Id="917100087" Language="SFX">
 							<ShortName>Kick_120bpm_4-4_L1M_P0M.wav</ShortName>
@@ -224,6 +228,10 @@
 						<File Id="1049404315" Language="SFX">
 							<ShortName>Drone_120bpm4-4_L128M_P8M.wav</ShortName>
 							<Path>SFX\Drone_120bpm4-4_L128M_P8M_E3D9B443.wem</Path>
+						</File>
+						<File Id="1054573719" Language="SFX">
+							<ShortName>ElectricDrone120bpm_9L.wav</ShortName>
+							<Path>SFX\ElectricDrone120bpm_9L_E3D9B443.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -243,7 +251,7 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="1835233263" Name="WallCollision" ObjectPath="\Events\Default Work Unit\WallCollision" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.106485" DurationMax="0.106485">
+				<Event Id="1835233263" Name="WallCollision" ObjectPath="\Events\Default Work Unit\WallCollision" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.102236" DurationMax="0.110674">
 					<IncludedMemoryFiles>
 						<File Id="135709545" Language="SFX">
 							<ShortName>Hit Wall Wood.wav</ShortName>

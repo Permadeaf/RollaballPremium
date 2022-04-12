@@ -29,11 +29,11 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}"/>
-							<Value>15</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Kick_RTPC" ID="{FBC621F7-082E-47EA-A8A4-2CFE6B8AF3B5}"/>
-							<Value>-96.3</Value>
+							<Value>-15.694537414966</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}"/>

@@ -35,7 +35,11 @@
 				</GameParameter>
 				<GameParameter Name="Distance_to_Danger" ID="{A4A1C299-E737-4464-819A-3679C1C783D4}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="25"/>
+						<Property Name="Max" Type="Real64" Value="25"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="0"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="3"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

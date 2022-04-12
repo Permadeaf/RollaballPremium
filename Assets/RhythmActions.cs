@@ -28,6 +28,11 @@ public class RhythmActions : MonoBehaviour
     [Range(0.1f, 10f)]
     public float Speed = 2.56f;
 
+    [SerializeField]
+    float distance;
+
+    static PlayerController controller;
+
     //////////////////////////////////////////////////////////////////////////////////////// FUNCTIONS
     public void Start()
     {
@@ -52,6 +57,20 @@ public class RhythmActions : MonoBehaviour
         this.transform.localScale = Modifications.ScaleOriginal;
     }
 
+    bool WithinPlayerDistance()
+    {
+        if (controller == null)
+        {
+            controller = GameObject.FindObjectOfType<PlayerController>();
+        }
+        if (controller == null)
+        {
+            return true;
+        }
+
+        return Vector3.Distance(transform.position, controller.transform.position) <= distance;
+    }
+
     public IEnumerator TransformPerformer()
     {
 
@@ -60,12 +79,16 @@ public class RhythmActions : MonoBehaviour
         Modifications.ScaleAmount = ScaleModifications + Modifications.ScaleOriginal;
 
         float speedwRandom = Speed + (rand * 10);
+        bool isWithinRange = WithinPlayerDistance();
+        Vector3 trackedScale = new Vector3();
 
         bool State_IsModified = false;
         while (!State_IsModified)
         {
-            transform.localScale = Vector3.Lerp(transform.localScale, Modifications.ScaleAmount, Time.deltaTime * speedwRandom);
-            float dist = Vector3.Distance(transform.localScale, Modifications.ScaleAmount);
+            trackedScale = Vector3.Lerp(transform.localScale, Modifications.ScaleAmount, Time.deltaTime * speedwRandom);
+            transform.localScale = isWithinRange ? trackedScale : Modifications.ScaleOriginal;
+
+            float dist = isWithinRange ? Vector3.Distance(transform.localScale, Modifications.ScaleAmount) : Vector3.Distance(trackedScale, Modifications.ScaleAmount);
             if (dist < 0.01f)
             {
                 State_IsModified = true;
@@ -75,8 +98,9 @@ public class RhythmActions : MonoBehaviour
         bool State_IsNormal = false;
         while (!State_IsNormal)
         {
-            transform.localScale = Vector3.Lerp(transform.localScale, Modifications.ScaleOriginal, Time.deltaTime * speedwRandom);
-            float dist = Vector3.Distance(transform.localScale, Modifications.ScaleOriginal);
+            trackedScale = Vector3.Lerp(transform.localScale, Modifications.ScaleOriginal, Time.deltaTime * speedwRandom);
+            transform.localScale = isWithinRange ? trackedScale : Modifications.ScaleOriginal;
+            float dist = isWithinRange ? Vector3.Distance(transform.localScale, Modifications.ScaleOriginal) : Vector3.Distance(trackedScale, Modifications.ScaleOriginal);
             if (dist < 0.01f)
             {
                 State_IsNormal = true;

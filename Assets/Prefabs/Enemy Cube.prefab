@@ -129,3 +129,4 @@ MonoBehaviour:
     ScaleAmount: {x: 0, y: 0, z: 0}
     ScaleOriginal: {x: 0, y: 0, z: 0}
   Speed: 2.56
+  distance: 4

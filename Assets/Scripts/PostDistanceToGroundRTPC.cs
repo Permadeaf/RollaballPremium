@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PostDistanceToGroundRTPC : MonoBehaviour
 {
+    [SerializeField]
+    SphereCollider playerCollider;
+
     public AK.Wwise.RTPC DistanceToGroundRTPC;
     public PlayerRaycast DistanceToGround;
 
@@ -20,7 +23,7 @@ public class PostDistanceToGroundRTPC : MonoBehaviour
     {
         if (DistanceToGround.RaycastHit)
         {
-            DistanceToGroundRTPC.SetGlobalValue(DistanceToGround.HitData.distance);
+            DistanceToGroundRTPC.SetGlobalValue(Mathf.Max(0, DistanceToGround.HitData.distance - playerCollider.radius));
         }
         else
         {

@@ -172,6 +172,8 @@ MonoBehaviour:
   jumpCheck: {fileID: 7809841494303609845}
   canJump: 1
   canMove: 1
+  gameCamera: {fileID: 0}
+  useCameraAsReference: 0
 --- !u!114 &7809841494303609845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08347490093191842878230bcb9876ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCollider: {fileID: 7809841494303609855}
   DistanceToGroundRTPC:
     idInternal: 0
     valueGuidInternal: 

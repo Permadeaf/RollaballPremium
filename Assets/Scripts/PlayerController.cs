@@ -28,6 +28,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     bool canMove = true;
 
+    [SerializeField]
+    Camera gameCamera;
+
+    [SerializeField]
+    bool useCameraAsReference = false;
+
     public bool CanMove
     {
         get
@@ -97,7 +103,18 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Vector3 movement = new Vector3(movementX, 0.0f, movementY);
+        Vector3 movement;
+        if (!useCameraAsReference)
+        {
+            movement = new Vector3(movementX, 0.0f, movementY);
+        }
+        else
+        {
+            Vector3 up = gameCamera.transform.up.normalized;
+            Vector3 right = gameCamera.transform.right.normalized;
+            movement = movementX * right + movementY * up;
+        }
+
 
         rb.AddForce(movement * speed);
 

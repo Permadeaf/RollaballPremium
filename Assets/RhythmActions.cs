@@ -31,6 +31,9 @@ public class RhythmActions : MonoBehaviour
     [SerializeField]
     float distance;
 
+    [SerializeField]
+    AnimationCurve curve;
+
     static PlayerController controller;
 
     //////////////////////////////////////////////////////////////////////////////////////// FUNCTIONS
@@ -71,6 +74,20 @@ public class RhythmActions : MonoBehaviour
         return Vector3.Distance(transform.position, controller.transform.position) <= distance;
     }
 
+    float GetPlayerDistance()
+    {
+        if (controller == null)
+        {
+            controller = GameObject.FindObjectOfType<PlayerController>();
+        }
+        if (controller == null)
+        {
+            return float.PositiveInfinity;
+        }
+
+        return Vector3.Distance(transform.position, controller.transform.position);
+    }
+
     public IEnumerator TransformPerformer()
     {
 
@@ -86,7 +103,9 @@ public class RhythmActions : MonoBehaviour
         while (!State_IsModified)
         {
             trackedScale = Vector3.Lerp(transform.localScale, Modifications.ScaleAmount, Time.deltaTime * speedwRandom);
-            transform.localScale = isWithinRange ? trackedScale : Modifications.ScaleOriginal;
+            Vector3 modScale = Modifications.ScaleOriginal + ScaleModifications * curve.Evaluate(GetPlayerDistance() / distance);
+            Vector3 curvedScale = Vector3.Lerp(transform.localScale, modScale, Time.deltaTime * speedwRandom);
+            transform.localScale = isWithinRange ? curvedScale : Modifications.ScaleOriginal;
 
             float dist = isWithinRange ? Vector3.Distance(transform.localScale, Modifications.ScaleAmount) : Vector3.Distance(trackedScale, Modifications.ScaleAmount);
             if (dist < 0.01f)

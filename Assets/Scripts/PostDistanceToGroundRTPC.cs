@@ -7,6 +7,8 @@ public class PostDistanceToGroundRTPC : MonoBehaviour
     public AK.Wwise.RTPC DistanceToGroundRTPC;
     public PlayerRaycast DistanceToGround;
 
+    const float MISS_VALUE = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,10 @@ public class PostDistanceToGroundRTPC : MonoBehaviour
         if (DistanceToGround.RaycastHit)
         {
             DistanceToGroundRTPC.SetGlobalValue(DistanceToGround.HitData.distance);
+        }
+        else
+        {
+            DistanceToGroundRTPC.SetGlobalValue(MISS_VALUE);
         }
     }
 }

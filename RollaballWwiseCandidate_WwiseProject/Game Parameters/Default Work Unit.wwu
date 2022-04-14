@@ -6,7 +6,7 @@
 				<GameParameter Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="15"/>
+						<Property Name="Max" Type="Real64" Value="40"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="0"/>
@@ -20,7 +20,12 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>
+				<GameParameter Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
 				<GameParameter Name="Skid_Factor" ID="{2DE53A5E-A721-47F0-AF21-F83986E9FC50}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>

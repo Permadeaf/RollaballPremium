@@ -16,7 +16,7 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3524392604">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2877045044">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -25,7 +25,7 @@
 				<GameParameter Id="3583298971" Name="Kick_RTPC" ObjectPath="\Game Parameters\Music Routings\Kick_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="2341204012">
+		<SoundBank Id="2858921253" Language="SFX" Hash="2332633214">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>

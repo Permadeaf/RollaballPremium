@@ -41,11 +41,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}"/>
-							<Value>6.6</Value>
+							<Value>3.26628559888726E-312</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Angular_Speed" ID="{C17E3F57-7556-4895-A24C-30B3315CF2AF}"/>
-							<Value>13.7362637362637</Value>
+							<Value>9.2</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>

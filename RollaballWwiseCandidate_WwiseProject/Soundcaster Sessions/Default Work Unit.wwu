@@ -49,7 +49,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance_To_Ground" ID="{DFACD059-E0FF-4988-965C-6E3D8C90B131}"/>
-							<Value>0</Value>
+							<Value>10</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Vertical_Speed" ID="{004B4055-2E22-4CF8-9174-344D67B64D96}"/>

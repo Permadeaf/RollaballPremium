@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: d1bbb3b5
-  useOtherObject: 0
+  useOtherObject: 1
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0

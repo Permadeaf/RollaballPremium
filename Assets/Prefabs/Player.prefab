@@ -264,7 +264,7 @@ MonoBehaviour:
   - {x: -0.8660254, y: -0.5, z: 0}
   - {x: 0, y: -0.5, z: 0.8660254}
   - {x: 0, y: -0.5, z: -0.8660254}
-  distance: 0.6
+  distance: 2
 --- !u!114 &7809841494303609844
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1630,6 +1630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Checkpoint
       objectReference: {fileID: 0}
+    - target: {fileID: 7710801656157228055, guid: b3adce6bd129d3a4d9dc1ba61f935892, type: 3}
+      propertyPath: m_Size.x
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3adce6bd129d3a4d9dc1ba61f935892, type: 3}
 --- !u!4 &1137804929 stripped

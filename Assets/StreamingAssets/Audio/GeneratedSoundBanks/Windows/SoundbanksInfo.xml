@@ -25,7 +25,7 @@
 				<GameParameter Id="3583298971" Name="Kick_RTPC" ObjectPath="\Game Parameters\Music Routings\Kick_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2858921253" Language="SFX" Hash="1591752565">
+		<SoundBank Id="2858921253" Language="SFX" Hash="2332633214">
 			<ObjectPath>\SoundBanks\Default Work Unit\AllInOne</ObjectPath>
 			<ShortName>AllInOne</ShortName>
 			<Path>AllInOne.bnk</Path>

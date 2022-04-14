@@ -86,6 +86,11 @@
 													<Point>
 														<XPos>15</XPos>
 														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>40</XPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -124,6 +129,11 @@
 													</Point>
 													<Point>
 														<XPos>15</XPos>
+														<YPos>123</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>40</XPos>
 														<YPos>123</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -230,6 +240,11 @@
 													</Point>
 													<Point>
 														<XPos>15</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>40</XPos>
 														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
@@ -361,6 +376,11 @@
 													<Point>
 														<XPos>15</XPos>
 														<YPos>3</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>40</XPos>
+														<YPos>4.76879</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -407,8 +427,13 @@
 																<SegmentShape>InvertedSCurve</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>15</XPos>
-																<YPos>816</YPos>
+																<XPos>15.07233</XPos>
+																<YPos>729</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>40</XPos>
+																<YPos>1425</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -531,6 +556,11 @@
 															<Point>
 																<XPos>15</XPos>
 																<YPos>179</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>40</XPos>
+																<YPos>179</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -590,6 +620,11 @@
 															</Point>
 															<Point>
 																<XPos>15</XPos>
+																<YPos>816</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>40</XPos>
 																<YPos>816</YPos>
 																<Flags>37</Flags>
 															</Point>
@@ -1285,6 +1320,11 @@
 													<Point>
 														<XPos>15</XPos>
 														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>40</XPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -1358,7 +1398,7 @@
 													</Point>
 													<Point>
 														<XPos>20</XPos>
-														<YPos>0</YPos>
+														<YPos>6.39559</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

@@ -6,7 +6,7 @@
 				<GameParameter Name="Player_Speed" ID="{0248FA98-5816-4820-964A-C6E3B9695E6C}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="15"/>
+						<Property Name="Max" Type="Real64" Value="40"/>
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 						<Property Name="SlewRateDown" Type="Real64" Value="100"/>
 						<Property Name="SlewRateUp" Type="Real64" Value="0"/>

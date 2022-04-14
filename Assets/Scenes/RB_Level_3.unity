@@ -1138,10 +1138,6 @@ PrefabInstance:
       propertyPath: canJump
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7809841494303609846, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}
-      propertyPath: distance
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7809841494303609849, guid: 92b3a0df6416c644b8d28b7cc3d84860, type: 3}
       propertyPath: m_Name
       value: Player
